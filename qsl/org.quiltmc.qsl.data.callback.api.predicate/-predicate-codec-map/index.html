@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>PredicateCodecMap</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>qsl</span>
+            </a>
+    </div>
+    <div>
+6.0.3+1.20.1    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":fatDokkaHtml/main">main</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="qsl::org.quiltmc.qsl.data.callback.api.predicate/PredicateCodecMap///PointingToDeclaration//538063418">
+  <div class="breadcrumbs"><a href="../../../index.html">qsl</a><span class="delimiter">/</span><a href="../index.html">org.quiltmc.qsl.data.callback.api.predicate</a><span class="delimiter">/</span><span class="current">PredicateCodecMap</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Predicate</span><wbr></wbr><span>Codec</span><wbr></wbr><span><span>Map</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">PredicateCodecMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">T</a><span class="token operator">&gt;</span> : <a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/index.html">CodecMap</a><span class="token operator">&lt;</span><a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/index.html">T</a><span class="token operator">&gt; </span></div><p class="paragraph">A CodecMap for <a href="../-codec-aware-predicate/index.html">CodecAwarePredicate</a>s that bundles a set of codecs created by shared providers. This class also handles registering shared providers for predicate codecs.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>&lt;T&gt;</span></span></u></div></span></div><div><div class="title"><p class="paragraph">the type of the input tested by the predicates this map can help encode</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1167589435%2FConstructors%2F538063418" anchor-label="PredicateCodecMap" id="-1167589435%2FConstructors%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-predicate-codec-map.html"><span>Predicate</span><wbr></wbr><span>Codec</span><wbr></wbr><span><span>Map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1167589435%2FConstructors%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">predicateCodec<span class="token operator">: </span>Codec&lt;CodecAwarePredicate&lt;T&gt;&gt;</span></span><span class="token punctuation">)</span></div><div class="brief ">Create a new predicate codec map based off of the provided general predicate codec.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1729883082%2FFunctions%2F538063418" anchor-label="createDelegatingCodec" id="-1729883082%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/create-delegating-codec.html"><span>create</span><wbr></wbr><span>Delegating</span><wbr></wbr><span><span>Codec</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1729883082%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/create-delegating-codec.html"><span class="token function">createDelegatingCodec</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">descriptor<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span>Codec&lt;T&gt;</div><div class="brief ">Creates a delegating codec based off this map that decodes or encodes objects, storing the codec identifier in the &quot;type&quot; field.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1136735597%2FFunctions%2F538063418" anchor-label="createDelegatingCodecPhased" id="1136735597%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/create-delegating-codec-phased.html"><span>create</span><wbr></wbr><span>Delegating</span><wbr></wbr><span>Codec</span><wbr></wbr><span><span>Phased</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1136735597%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/create-delegating-codec-phased.html"><span class="token function">createDelegatingCodecPhased</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">descriptor<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span>Codec&lt;Pair&lt;Identifier, T&gt;&gt;</div><div class="brief ">Creates a delegating codec based off this map that captures both the encoded object and an event phase, storing the codec identifier in the &quot;type&quot; field and the phase in the &quot;phase&quot; field.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="645667304%2FFunctions%2F538063418" anchor-label="lookup" id="645667304%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="lookup.html"><span><span>lookup</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="645667304%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="lookup.html"><span class="token function">lookup</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">codec<span class="token operator">: </span>Codec&lt;? extends CodecAwarePredicate&lt;T&gt;&gt;</span></span><span class="token punctuation">)</span><span class="token operator">: </span>Identifier</div><div class="brief ">{@return the identifier associated with the provided codec, or {@code null} if no identifier is associated with the codec}</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="lookup.html"><span class="token function">lookup</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span>Identifier</span></span><span class="token punctuation">)</span><span class="token operator">: </span>Codec&lt;? extends CodecAwarePredicate&lt;T&gt;&gt;</div><div class="brief ">{@return the codec associated with the provided identifier, or {@code null} if no codec is associated with the identifier}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1126567597%2FFunctions%2F538063418" anchor-label="lookupProvider" id="1126567597%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="lookup-provider.html"><span>lookup</span><wbr></wbr><span><span>Provider</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1126567597%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="lookup-provider.html"><span class="token function">lookupProvider</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span>Identifier</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-predicate-codec-provider/index.html">PredicateCodecProvider</a></div><div class="brief ">{@return the provider registered to the given id, or null if no provider has been registered}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-63947105%2FFunctions%2F538063418" anchor-label="register" id="-63947105%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="register.html"><span><span>register</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-63947105%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="register.html"><span class="token function">register</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span>Identifier<span class="token punctuation">, </span></span><span class="parameter ">codec<span class="token operator">: </span>Codec&lt;? extends CodecAwarePredicate&lt;T&gt;&gt;</span></span><span class="token punctuation">)</span></div><div class="brief ">Adds a codec to the map.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-174504862%2FFunctions%2F538063418" anchor-label="registerProvider" id="-174504862%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="register-provider.html"><span>register</span><wbr></wbr><span><span>Provider</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-174504862%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="register-provider.html"><span class="token function">registerProvider</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span>Identifier<span class="token punctuation">, </span></span><span class="parameter ">provider<span class="token operator">: </span><a href="../-predicate-codec-provider/index.html">PredicateCodecProvider</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Register a general predicate codec provider.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

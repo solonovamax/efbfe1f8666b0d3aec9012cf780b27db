@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>QuiltClientCommandSource</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>qsl</span>
+            </a>
+    </div>
+    <div>
+6.0.3+1.20.1    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":fatDokkaHtml/main">main</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="qsl::org.quiltmc.qsl.command.api.client/QuiltClientCommandSource///PointingToDeclaration//538063418">
+  <div class="breadcrumbs"><a href="../../../index.html">qsl</a><span class="delimiter">/</span><a href="../index.html">org.quiltmc.qsl.command.api.client</a><span class="delimiter">/</span><span class="current">QuiltClientCommandSource</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Quilt</span><wbr></wbr><span>Client</span><wbr></wbr><span>Command</span><wbr></wbr><span><span>Source</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../org.quiltmc.qsl.base.api.util/-injected-interface/index.html"><span class="token annotation builtin">InjectedInterface</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">interface </span><a href="index.html">QuiltClientCommandSource</a></div><p class="paragraph">Extensions to CommandSource, implemented on ClientCommandSource for client commands - most of these methods are equivalents to methods on ServerCommandSource, to provide a more familiar API.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1568079767%2FFunctions%2F538063418" anchor-label="getClient" id="-1568079767%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-client.html"><span>get</span><wbr></wbr><span><span>Client</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1568079767%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-client.html"><span class="token function">getClient</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>MinecraftClient</div><div class="brief ">Gets the client instance used to run the command.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1198793903%2FFunctions%2F538063418" anchor-label="getEntity" id="-1198793903%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-entity.html"><span>get</span><wbr></wbr><span><span>Entity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1198793903%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-entity.html"><span class="token function">getEntity</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>Entity</div><div class="brief ">Gets the entity that used the command.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="322500906%2FFunctions%2F538063418" anchor-label="getMeta" id="322500906%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-meta.html"><span>get</span><wbr></wbr><span><span>Meta</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="322500906%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-meta.html"><span class="token function">getMeta</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></div><div class="brief ">Gets the meta property under <code class="lang-kotlin">key</code> that was assigned to this source.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="816078355%2FFunctions%2F538063418" anchor-label="getPlayer" id="816078355%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-player.html"><span>get</span><wbr></wbr><span><span>Player</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="816078355%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-player.html"><span class="token function">getPlayer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>ClientPlayerEntity</div><div class="brief ">Gets the player that used the command.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1348491019%2FFunctions%2F538063418" anchor-label="getPosition" id="1348491019%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-position.html"><span>get</span><wbr></wbr><span><span>Position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1348491019%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-position.html"><span class="token function">getPosition</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>Vec3d</div><div class="brief ">Gets the position from where the command has been executed.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1536375382%2FFunctions%2F538063418" anchor-label="getRotation" id="1536375382%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-rotation.html"><span>get</span><wbr></wbr><span><span>Rotation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1536375382%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-rotation.html"><span class="token function">getRotation</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>Vec2f</div><div class="brief ">Gets the rotation of the entity that used the command.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="235907956%2FFunctions%2F538063418" anchor-label="getWorld" id="235907956%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-world.html"><span>get</span><wbr></wbr><span><span>World</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="235907956%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-world.html"><span class="token function">getWorld</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>ClientWorld</div><div class="brief ">Gets the world where the player used the command.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1461494723%2FFunctions%2F538063418" anchor-label="sendError" id="-1461494723%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-error.html"><span>send</span><wbr></wbr><span><span>Error</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1461494723%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="send-error.html"><span class="token function">sendError</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span>Text</span></span><span class="token punctuation">)</span></div><div class="brief ">Sends an error message to the player.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-963118890%2FFunctions%2F538063418" anchor-label="sendFeedback" id="-963118890%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-feedback.html"><span>send</span><wbr></wbr><span><span>Feedback</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-963118890%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="send-feedback.html"><span class="token function">sendFeedback</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span>Text</span></span><span class="token punctuation">)</span></div><div class="brief ">Sends a feedback message to the player.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-148690002%2FFunctions%2F538063418" anchor-label="setMeta" id="-148690002%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-meta.html"><span>set</span><wbr></wbr><span><span>Meta</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-148690002%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-meta.html"><span class="token function">setMeta</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the meta property under key <code class="lang-kotlin">key</code> with the value <code class="lang-kotlin">value</code>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

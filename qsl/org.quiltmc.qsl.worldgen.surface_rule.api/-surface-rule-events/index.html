@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SurfaceRuleEvents</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>qsl</span>
+            </a>
+    </div>
+    <div>
+6.0.3+1.20.1    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":fatDokkaHtml/main">main</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="qsl::org.quiltmc.qsl.worldgen.surface_rule.api/SurfaceRuleEvents///PointingToDeclaration//538063418">
+  <div class="breadcrumbs"><a href="../../../index.html">qsl</a><span class="delimiter">/</span><a href="../index.html">org.quiltmc.qsl.worldgen.surface_rule.api</a><span class="delimiter">/</span><span class="current">SurfaceRuleEvents</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Surface</span><wbr></wbr><span>Rule</span><wbr></wbr><span><span>Events</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">SurfaceRuleEvents</a></div><p class="paragraph">Events relating to surface rules. </p><p class="paragraph"><strong>Modification events</strong> like <a href="-m-o-d-i-f-y_-o-v-e-r-w-o-r-l-d.html">MODIFY_OVERWORLD</a>, <a href="-m-o-d-i-f-y_-n-e-t-h-e-r.html">MODIFY_NETHER</a>, and <a href="-m-o-d-i-f-y_-t-h-e_-e-n-d.html">MODIFY_THE_END</a> allows to modify the surface rules for the related Vanilla dimensions.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1298001256%2FClasslikes%2F538063418" anchor-label="GenericModifierCallback" id="1298001256%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-generic-modifier-callback/index.html"><span>Generic</span><wbr></wbr><span>Modifier</span><wbr></wbr><span><span>Callback</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1298001256%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-generic-modifier-callback/index.html">GenericModifierCallback</a> : <a href="../../org.quiltmc.qsl.base.api.event/-event-aware-listener/index.html">EventAwareListener</a>, <a href="../../org.quiltmc.qsl.data.callback.api/-codec-aware/index.html">CodecAware</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-19227981%2FClasslikes%2F538063418" anchor-label="NetherModifierCallback" id="-19227981%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-nether-modifier-callback/index.html"><span>Nether</span><wbr></wbr><span>Modifier</span><wbr></wbr><span><span>Callback</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-19227981%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-nether-modifier-callback/index.html">NetherModifierCallback</a> : <a href="../../org.quiltmc.qsl.base.api.event/-event-aware-listener/index.html">EventAwareListener</a>, <a href="../../org.quiltmc.qsl.data.callback.api/-codec-aware/index.html">CodecAware</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1860445855%2FClasslikes%2F538063418" anchor-label="OverworldModifierCallback" id="-1860445855%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-overworld-modifier-callback/index.html"><span>Overworld</span><wbr></wbr><span>Modifier</span><wbr></wbr><span><span>Callback</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1860445855%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-overworld-modifier-callback/index.html">OverworldModifierCallback</a> : <a href="../../org.quiltmc.qsl.base.api.event/-event-aware-listener/index.html">EventAwareListener</a>, <a href="../../org.quiltmc.qsl.data.callback.api/-codec-aware/index.html">CodecAware</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-568043359%2FClasslikes%2F538063418" anchor-label="TheEndModifierCallback" id="-568043359%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-the-end-modifier-callback/index.html"><span>The</span><wbr></wbr><span>End</span><wbr></wbr><span>Modifier</span><wbr></wbr><span><span>Callback</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-568043359%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-the-end-modifier-callback/index.html">TheEndModifierCallback</a> : <a href="../../org.quiltmc.qsl.base.api.event/-event-aware-listener/index.html">EventAwareListener</a>, <a href="../../org.quiltmc.qsl.data.callback.api/-codec-aware/index.html">CodecAware</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1461014912%2FProperties%2F538063418" anchor-label="MODIFY_GENERIC" id="-1461014912%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-d-i-f-y_-g-e-n-e-r-i-c.html"><span><span>MODIFY_GENERIC</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1461014912%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-m-o-d-i-f-y_-g-e-n-e-r-i-c.html">MODIFY_GENERIC</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-generic-modifier-callback/index.html">SurfaceRuleEvents.GenericModifierCallback</a><span class="token operator">&gt;</span></div><div class="brief ">An event indicating that the surface rules for a non-Vanilla dimension may get modified by mods, allowing the injection of modded surface rules.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="788831966%2FProperties%2F538063418" anchor-label="MODIFY_GENERIC_CODECS" id="788831966%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-d-i-f-y_-g-e-n-e-r-i-c_-c-o-d-e-c-s.html"><span><span>MODIFY_GENERIC_CODECS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="788831966%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-m-o-d-i-f-y_-g-e-n-e-r-i-c_-c-o-d-e-c-s.html">MODIFY_GENERIC_CODECS</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/index.html">CodecMap</a><span class="token operator">&lt;</span><a href="-generic-modifier-callback/index.html">SurfaceRuleEvents.GenericModifierCallback</a><span class="token operator">&gt;</span></div><div class="brief ">A <a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/index.html">CodecMap</a> for the <a href="-generic-modifier-callback/index.html">GenericModifierCallback</a> event.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1862093199%2FProperties%2F538063418" anchor-label="MODIFY_GENERIC_DATA" id="-1862093199%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-d-i-f-y_-g-e-n-e-r-i-c_-d-a-t-a.html"><span><span>MODIFY_GENERIC_DATA</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1862093199%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-m-o-d-i-f-y_-g-e-n-e-r-i-c_-d-a-t-a.html">MODIFY_GENERIC_DATA</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.data.callback.api/-dynamic-event-callback-source/index.html">DynamicEventCallbackSource</a><span class="token operator">&lt;</span><a href="-generic-modifier-callback/index.html">SurfaceRuleEvents.GenericModifierCallback</a><span class="token operator">&gt;</span></div><div class="brief ">A <a href="../../org.quiltmc.qsl.data.callback.api/-dynamic-event-callback-source/index.html">DynamicEventCallbackSource</a> for the <a href="-generic-modifier-callback/index.html">GenericModifierCallback</a> event.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1614318219%2FProperties%2F538063418" anchor-label="MODIFY_NETHER" id="1614318219%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-d-i-f-y_-n-e-t-h-e-r.html"><span><span>MODIFY_NETHER</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1614318219%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-m-o-d-i-f-y_-n-e-t-h-e-r.html">MODIFY_NETHER</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-nether-modifier-callback/index.html">SurfaceRuleEvents.NetherModifierCallback</a><span class="token operator">&gt;</span></div><div class="brief ">An event indicating that the surface rules for the Nether dimension may get modified by mods, allowing the injection of modded surface rules.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="273952883%2FProperties%2F538063418" anchor-label="MODIFY_NETHER_CODECS" id="273952883%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-d-i-f-y_-n-e-t-h-e-r_-c-o-d-e-c-s.html"><span><span>MODIFY_NETHER_CODECS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="273952883%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-m-o-d-i-f-y_-n-e-t-h-e-r_-c-o-d-e-c-s.html">MODIFY_NETHER_CODECS</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/index.html">CodecMap</a><span class="token operator">&lt;</span><a href="-nether-modifier-callback/index.html">SurfaceRuleEvents.NetherModifierCallback</a><span class="token operator">&gt;</span></div><div class="brief ">A <a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/index.html">CodecMap</a> for the <a href="-nether-modifier-callback/index.html">NetherModifierCallback</a> event.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-557602490%2FProperties%2F538063418" anchor-label="MODIFY_NETHER_DATA" id="-557602490%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-d-i-f-y_-n-e-t-h-e-r_-d-a-t-a.html"><span><span>MODIFY_NETHER_DATA</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-557602490%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-m-o-d-i-f-y_-n-e-t-h-e-r_-d-a-t-a.html">MODIFY_NETHER_DATA</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.data.callback.api/-dynamic-event-callback-source/index.html">DynamicEventCallbackSource</a><span class="token operator">&lt;</span><a href="-nether-modifier-callback/index.html">SurfaceRuleEvents.NetherModifierCallback</a><span class="token operator">&gt;</span></div><div class="brief ">A <a href="../../org.quiltmc.qsl.data.callback.api/-dynamic-event-callback-source/index.html">DynamicEventCallbackSource</a> for the <a href="-nether-modifier-callback/index.html">NetherModifierCallback</a> event.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1410188409%2FProperties%2F538063418" anchor-label="MODIFY_OVERWORLD" id="1410188409%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-d-i-f-y_-o-v-e-r-w-o-r-l-d.html"><span><span>MODIFY_OVERWORLD</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1410188409%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-m-o-d-i-f-y_-o-v-e-r-w-o-r-l-d.html">MODIFY_OVERWORLD</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-overworld-modifier-callback/index.html">SurfaceRuleEvents.OverworldModifierCallback</a><span class="token operator">&gt;</span></div><div class="brief ">An event indicating that the surface rules for the Overworld dimension may get modified by mods, allowing the injection of modded surface rules.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-919302459%2FProperties%2F538063418" anchor-label="MODIFY_OVERWORLD_CODECS" id="-919302459%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-d-i-f-y_-o-v-e-r-w-o-r-l-d_-c-o-d-e-c-s.html"><span><span>MODIFY_OVERWORLD_CODECS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-919302459%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-m-o-d-i-f-y_-o-v-e-r-w-o-r-l-d_-c-o-d-e-c-s.html">MODIFY_OVERWORLD_CODECS</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/index.html">CodecMap</a><span class="token operator">&lt;</span><a href="-overworld-modifier-callback/index.html">SurfaceRuleEvents.OverworldModifierCallback</a><span class="token operator">&gt;</span></div><div class="brief ">A <a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/index.html">CodecMap</a> for the <a href="-overworld-modifier-callback/index.html">OverworldModifierCallback</a> event.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-496274408%2FProperties%2F538063418" anchor-label="MODIFY_OVERWORLD_DATA" id="-496274408%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-d-i-f-y_-o-v-e-r-w-o-r-l-d_-d-a-t-a.html"><span><span>MODIFY_OVERWORLD_DATA</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-496274408%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-m-o-d-i-f-y_-o-v-e-r-w-o-r-l-d_-d-a-t-a.html">MODIFY_OVERWORLD_DATA</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.data.callback.api/-dynamic-event-callback-source/index.html">DynamicEventCallbackSource</a><span class="token operator">&lt;</span><a href="-overworld-modifier-callback/index.html">SurfaceRuleEvents.OverworldModifierCallback</a><span class="token operator">&gt;</span></div><div class="brief ">A <a href="../../org.quiltmc.qsl.data.callback.api/-dynamic-event-callback-source/index.html">DynamicEventCallbackSource</a> for the <a href="-overworld-modifier-callback/index.html">OverworldModifierCallback</a> event.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-470501078%2FProperties%2F538063418" anchor-label="MODIFY_THE_END" id="-470501078%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-d-i-f-y_-t-h-e_-e-n-d.html"><span><span>MODIFY_THE_END</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-470501078%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-m-o-d-i-f-y_-t-h-e_-e-n-d.html">MODIFY_THE_END</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-the-end-modifier-callback/index.html">SurfaceRuleEvents.TheEndModifierCallback</a><span class="token operator">&gt;</span></div><div class="brief ">An event indicating that the surface rules for the End dimension may get modified by mods, allowing the injection of modded surface rules.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="469967092%2FProperties%2F538063418" anchor-label="MODIFY_THE_END_CODECS" id="469967092%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-d-i-f-y_-t-h-e_-e-n-d_-c-o-d-e-c-s.html"><span><span>MODIFY_THE_END_CODECS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="469967092%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-m-o-d-i-f-y_-t-h-e_-e-n-d_-c-o-d-e-c-s.html">MODIFY_THE_END_CODECS</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/index.html">CodecMap</a><span class="token operator">&lt;</span><a href="-the-end-modifier-callback/index.html">SurfaceRuleEvents.TheEndModifierCallback</a><span class="token operator">&gt;</span></div><div class="brief ">A <a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/index.html">CodecMap</a> for the <a href="-the-end-modifier-callback/index.html">TheEndModifierCallback</a> event.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-557398521%2FProperties%2F538063418" anchor-label="MODIFY_THE_END_DATA" id="-557398521%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-d-i-f-y_-t-h-e_-e-n-d_-d-a-t-a.html"><span><span>MODIFY_THE_END_DATA</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-557398521%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-m-o-d-i-f-y_-t-h-e_-e-n-d_-d-a-t-a.html">MODIFY_THE_END_DATA</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.data.callback.api/-dynamic-event-callback-source/index.html">DynamicEventCallbackSource</a><span class="token operator">&lt;</span><a href="-the-end-modifier-callback/index.html">SurfaceRuleEvents.TheEndModifierCallback</a><span class="token operator">&gt;</span></div><div class="brief ">A <a href="../../org.quiltmc.qsl.data.callback.api/-dynamic-event-callback-source/index.html">DynamicEventCallbackSource</a> for the <a href="-the-end-modifier-callback/index.html">TheEndModifierCallback</a> event.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-232572718%2FProperties%2F538063418" anchor-label="REMOVE_PHASE" id="-232572718%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-m-o-v-e_-p-h-a-s-e.html"><span><span>REMOVE_PHASE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-232572718%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-r-e-m-o-v-e_-p-h-a-s-e.html">REMOVE_PHASE</a><span class="token operator">: </span>Identifier</div><div class="brief ">Represents the event phase named <code class="lang-kotlin">quilt:remove</code> for the modification events for which removals may happen.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

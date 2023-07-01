@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>QuiltItemSettings</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>qsl</span>
+            </a>
+    </div>
+    <div>
+6.0.3+1.20.1    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":fatDokkaHtml/main">main</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="qsl::org.quiltmc.qsl.item.setting.api/QuiltItemSettings///PointingToDeclaration//538063418">
+  <div class="breadcrumbs"><a href="../../../index.html">qsl</a><span class="delimiter">/</span><a href="../index.html">org.quiltmc.qsl.item.setting.api</a><span class="delimiter">/</span><span class="current">QuiltItemSettings</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Quilt</span><wbr></wbr><span>Item</span><wbr></wbr><span><span>Settings</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">QuiltItemSettings</a></div><p class="paragraph">Quilt's version of Item.Settings. Adds additional methods and hooks not found in the original class. </p><p class="paragraph"> To use it, simply replace <code class="lang-kotlin">new Item.Settings()</code> with <code class="lang-kotlin">new QuiltItemSettings()</code>.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1640886363%2FConstructors%2F538063418" anchor-label="QuiltItemSettings" id="1640886363%2FConstructors%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-quilt-item-settings.html"><span>Quilt</span><wbr></wbr><span>Item</span><wbr></wbr><span><span>Settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1640886363%2FConstructors%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="235474982%2FFunctions%2F538063418" anchor-label="customDamage" id="235474982%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="custom-damage.html"><span>custom</span><wbr></wbr><span><span>Damage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="235474982%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="custom-damage.html"><span class="token function">customDamage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../-custom-damage-handler/index.html">CustomDamageHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div><div class="brief ">Sets the <a href="../-custom-damage-handler/index.html">CustomDamageHandler</a> of the item.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2003996636%2FFunctions%2F538063418" anchor-label="customSetting" id="-2003996636%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="custom-setting.html"><span>custom</span><wbr></wbr><span><span>Setting</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2003996636%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="custom-setting.html">T</a><span class="token operator">&gt; </span><a href="custom-setting.html"><span class="token function">customSetting</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">setting<span class="token operator">: </span><a href="../-custom-item-setting/index.html">CustomItemSetting</a><span class="token operator">&lt;</span><a href="custom-setting.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="custom-setting.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div><div class="brief ">Sets a custom setting of the item.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-642513871%2FFunctions%2F538063418" anchor-label="equipmentSlot" id="-642513871%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="equipment-slot.html"><span>equipment</span><wbr></wbr><span><span>Slot</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-642513871%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="equipment-slot.html"><span class="token function">equipmentSlot</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">equipmentSlot<span class="token operator">: </span>EquipmentSlot</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div><div class="brief ">Sets the <a href="../-equipment-slot-provider/index.html">EquipmentSlotProvider</a> of the item to always use <code class="lang-kotlin">equipmentSlot</code>.</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="equipment-slot.html"><span class="token function">equipmentSlot</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">equipmentSlotProvider<span class="token operator">: </span><a href="../-equipment-slot-provider/index.html">EquipmentSlotProvider</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div><div class="brief ">Sets the <a href="../-equipment-slot-provider/index.html">EquipmentSlotProvider</a> of the item.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2074701104%2FFunctions%2F538063418" anchor-label="fireproof" id="-2074701104%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fireproof.html"><span><span>fireproof</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2074701104%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="fireproof.html"><span class="token function">fireproof</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1903150107%2FFunctions%2F538063418" anchor-label="food" id="-1903150107%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="food.html"><span><span>food</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1903150107%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="food.html"><span class="token function">food</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">foodComponent<span class="token operator">: </span>FoodComponent</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="864100226%2FFunctions%2F538063418" anchor-label="maxCount" id="864100226%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-count.html"><span>max</span><wbr></wbr><span><span>Count</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="864100226%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="max-count.html"><span class="token function">maxCount</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">maxCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-640376888%2FFunctions%2F538063418" anchor-label="maxDamage" id="-640376888%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-damage.html"><span>max</span><wbr></wbr><span><span>Damage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-640376888%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="max-damage.html"><span class="token function">maxDamage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">maxDamage<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1504311394%2FFunctions%2F538063418" anchor-label="maxDamageIfAbsent" id="-1504311394%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-damage-if-absent.html"><span>max</span><wbr></wbr><span>Damage</span><wbr></wbr><span>If</span><wbr></wbr><span><span>Absent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1504311394%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="max-damage-if-absent.html"><span class="token function">maxDamageIfAbsent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">maxDamage<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-878503482%2FFunctions%2F538063418" anchor-label="rarity" id="-878503482%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rarity.html"><span><span>rarity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-878503482%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="rarity.html"><span class="token function">rarity</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">rarity<span class="token operator">: </span>Rarity</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-756861913%2FFunctions%2F538063418" anchor-label="recipeDamageRemainder" id="-756861913%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="recipe-damage-remainder.html"><span>recipe</span><wbr></wbr><span>Damage</span><wbr></wbr><span><span>Remainder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-756861913%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="recipe-damage-remainder.html"><span class="token function">recipeDamageRemainder</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div><div class="brief ">Sets the stack-aware recipe remainder to damage the item by 1 every time it is used in crafting.</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="recipe-damage-remainder.html"><span class="token function">recipeDamageRemainder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">by<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div><div class="brief ">Sets the stack-aware recipe remainder to damage the item by a certain amount every time it is used in crafting.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1402904597%2FFunctions%2F538063418" anchor-label="recipeRemainder" id="-1402904597%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="recipe-remainder.html"><span>recipe</span><wbr></wbr><span><span>Remainder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1402904597%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="recipe-remainder.html"><span class="token function">recipeRemainder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">recipeRemainder<span class="token operator">: </span>Item</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div><br><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="recipe-remainder.html"><span class="token function">recipeRemainder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">provider<span class="token operator">: </span><a href="../-recipe-remainder-provider/index.html">RecipeRemainderProvider</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div><div class="brief ">Sets the stack-aware recipe remainder provider of the item.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1591752781%2FFunctions%2F538063418" anchor-label="recipeSelfRemainder" id="-1591752781%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="recipe-self-remainder.html"><span>recipe</span><wbr></wbr><span>Self</span><wbr></wbr><span><span>Remainder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1591752781%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="recipe-self-remainder.html"><span class="token function">recipeSelfRemainder</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div><div class="brief ">Sets the stack-aware recipe remainder to return the item itself.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="289414186%2FFunctions%2F538063418" anchor-label="requiredFlags" id="289414186%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="required-flags.html"><span>required</span><wbr></wbr><span><span>Flags</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="289414186%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="required-flags.html"><span class="token function">requiredFlags</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">flags<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span>FeatureFlag<span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuiltItemSettings</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

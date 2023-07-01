@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CrashReportEvents</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>qsl</span>
+            </a>
+    </div>
+    <div>
+6.0.3+1.20.1    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":fatDokkaHtml/main">main</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="qsl::org.quiltmc.qsl.crash.api/CrashReportEvents///PointingToDeclaration//538063418">
+  <div class="breadcrumbs"><a href="../../../index.html">qsl</a><span class="delimiter">/</span><a href="../index.html">org.quiltmc.qsl.crash.api</a><span class="delimiter">/</span><span class="current">CrashReportEvents</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Crash</span><wbr></wbr><span>Report</span><wbr></wbr><span><span>Events</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">CrashReportEvents</a></div><p class="paragraph">Events which allow the manipulation of crash reports. </p><p class="paragraph">Crash reports are created on the client and the server during a crash, and are also produced on the server every tick if debug/performance recording is enabled. (dump)</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1720652761%2FConstructors%2F538063418" anchor-label="CrashReportEvents" id="1720652761%2FConstructors%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-crash-report-events.html"><span>Crash</span><wbr></wbr><span>Report</span><wbr></wbr><span><span>Events</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1720652761%2FConstructors%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1473758739%2FClasslikes%2F538063418" anchor-label="BlockDetails" id="-1473758739%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-block-details/index.html"><span>Block</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1473758739%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-block-details/index.html">BlockDetails</a> : <a href="../../org.quiltmc.qsl.base.api.event/-event-aware-listener/index.html">EventAwareListener</a></div><div class="brief ">Functional interface to be implemented on callbacks for <a href="-b-l-o-c-k_-d-e-t-a-i-l-s.html">BLOCK_DETAILS</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1872457872%2FClasslikes%2F538063418" anchor-label="BlockEntityDetails" id="-1872457872%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-block-entity-details/index.html"><span>Block</span><wbr></wbr><span>Entity</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1872457872%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-block-entity-details/index.html">BlockEntityDetails</a> : <a href="../../org.quiltmc.qsl.base.api.event/-event-aware-listener/index.html">EventAwareListener</a></div><div class="brief ">Functional interface to be implemented on callbacks for <a href="-b-l-o-c-k-e-n-t-i-t-y_-d-e-t-a-i-l-s.html">BLOCKENTITY_DETAILS</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1678634886%2FClasslikes%2F538063418" anchor-label="CrashReportCreation" id="1678634886%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-crash-report-creation/index.html"><span>Crash</span><wbr></wbr><span>Report</span><wbr></wbr><span><span>Creation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1678634886%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-crash-report-creation/index.html">CrashReportCreation</a> : <a href="../../org.quiltmc.qsl.base.api.event/-event-aware-listener/index.html">EventAwareListener</a></div><div class="brief ">Functional interface to be implemented on callbacks for <a href="-c-r-a-s-h_-r-e-p-o-r-t_-c-r-e-a-t-i-o-n.html">CRASH_REPORT_CREATION</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="473185601%2FClasslikes%2F538063418" anchor-label="EntityDetails" id="473185601%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-entity-details/index.html"><span>Entity</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="473185601%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-entity-details/index.html">EntityDetails</a> : <a href="../../org.quiltmc.qsl.base.api.event/-event-aware-listener/index.html">EventAwareListener</a></div><div class="brief ">Functional interface to be implemented on callbacks for <a href="-e-n-t-i-t-y_-d-e-t-a-i-l-s.html">ENTITY_DETAILS</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1022977139%2FClasslikes%2F538063418" anchor-label="SystemDetails" id="-1022977139%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-system-details/index.html"><span>System</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1022977139%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-system-details/index.html">SystemDetails</a> : <a href="../../org.quiltmc.qsl.base.api.event/-event-aware-listener/index.html">EventAwareListener</a></div><div class="brief ">Functional interface to be implemented on callbacks for <a href="-s-y-s-t-e-m_-d-e-t-a-i-l-s.html">SYSTEM_DETAILS</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1955840782%2FClasslikes%2F538063418" anchor-label="WorldDetails" id="-1955840782%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-world-details/index.html"><span>World</span><wbr></wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1955840782%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-world-details/index.html">WorldDetails</a> : <a href="../../org.quiltmc.qsl.base.api.event/-event-aware-listener/index.html">EventAwareListener</a></div><div class="brief ">Functional interface to be implemented on callbacks for <a href="-w-o-r-l-d_-d-e-t-a-i-l-s.html">WORLD_DETAILS</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1433994141%2FProperties%2F538063418" anchor-label="BLOCK_DETAILS" id="1433994141%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-l-o-c-k_-d-e-t-a-i-l-s.html"><span><span>BLOCK_DETAILS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1433994141%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-b-l-o-c-k_-d-e-t-a-i-l-s.html">BLOCK_DETAILS</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-block-details/index.html">CrashReportEvents.BlockDetails</a><span class="token operator">&gt;</span></div><div class="brief ">An event for adding information about a block to a crash report.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="259759578%2FProperties%2F538063418" anchor-label="BLOCKENTITY_DETAILS" id="259759578%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-l-o-c-k-e-n-t-i-t-y_-d-e-t-a-i-l-s.html"><span><span>BLOCKENTITY_DETAILS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="259759578%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-b-l-o-c-k-e-n-t-i-t-y_-d-e-t-a-i-l-s.html">BLOCKENTITY_DETAILS</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-block-entity-details/index.html">CrashReportEvents.BlockEntityDetails</a><span class="token operator">&gt;</span></div><div class="brief ">An event for adding information about a block entity to a crash report.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2024732325%2FProperties%2F538063418" anchor-label="CRASH_REPORT_CREATION" id="-2024732325%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-r-a-s-h_-r-e-p-o-r-t_-c-r-e-a-t-i-o-n.html"><span><span>CRASH_REPORT_CREATION</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2024732325%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-c-r-a-s-h_-r-e-p-o-r-t_-c-r-e-a-t-i-o-n.html">CRASH_REPORT_CREATION</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-crash-report-creation/index.html">CrashReportEvents.CrashReportCreation</a><span class="token operator">&gt;</span></div><div class="brief ">An event for modifying a crash report before it is stringified.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-961097593%2FProperties%2F538063418" anchor-label="ENTITY_DETAILS" id="-961097593%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e-n-t-i-t-y_-d-e-t-a-i-l-s.html"><span><span>ENTITY_DETAILS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-961097593%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-e-n-t-i-t-y_-d-e-t-a-i-l-s.html">ENTITY_DETAILS</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-entity-details/index.html">CrashReportEvents.EntityDetails</a><span class="token operator">&gt;</span></div><div class="brief ">An event for adding information about an entity to a crash report.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-97502277%2FProperties%2F538063418" anchor-label="SYSTEM_DETAILS" id="-97502277%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-s-t-e-m_-d-e-t-a-i-l-s.html"><span><span>SYSTEM_DETAILS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-97502277%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-s-y-s-t-e-m_-d-e-t-a-i-l-s.html">SYSTEM_DETAILS</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-system-details/index.html">CrashReportEvents.SystemDetails</a><span class="token operator">&gt;</span></div><div class="brief ">An event for adding information to the &quot;System Details&quot; section of the crash report.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-625647304%2FProperties%2F538063418" anchor-label="WORLD_DETAILS" id="-625647304%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-w-o-r-l-d_-d-e-t-a-i-l-s.html"><span><span>WORLD_DETAILS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-625647304%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-w-o-r-l-d_-d-e-t-a-i-l-s.html">WORLD_DETAILS</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-world-details/index.html">CrashReportEvents.WorldDetails</a><span class="token operator">&gt;</span></div><div class="brief ">An event for adding information to the &quot;Affected level&quot; section of the crash report.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

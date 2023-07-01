@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>BiomeSelectionContext</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>qsl</span>
+            </a>
+    </div>
+    <div>
+6.0.3+1.20.1    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":fatDokkaHtml/main">main</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="qsl::org.quiltmc.qsl.worldgen.biome.api/BiomeSelectionContext///PointingToDeclaration//538063418">
+  <div class="breadcrumbs"><a href="../../../index.html">qsl</a><span class="delimiter">/</span><a href="../index.html">org.quiltmc.qsl.worldgen.biome.api</a><span class="delimiter">/</span><span class="current">BiomeSelectionContext</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Biome</span><wbr></wbr><span>Selection</span><wbr></wbr><span><span>Context</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">BiomeSelectionContext</a></div><p class="paragraph">Context given to a biome selector for deciding whether it applies to a biome or not.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1579231485%2FFunctions%2F538063418" anchor-label="canGenerateIn" id="1579231485%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-generate-in.html"><span>can</span><wbr></wbr><span>Generate</span><wbr></wbr><span><span>In</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1579231485%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="can-generate-in.html"><span class="token function">canGenerateIn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dimensionKey<span class="token operator">: </span>RegistryKey&lt;DimensionOptions&gt;</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Tries to determine whether this biome generates in a specific dimension, based on the net.minecraft.world.gen.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2110339231%2FFunctions%2F538063418" anchor-label="doesPlacedFeatureExist" id="-2110339231%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="does-placed-feature-exist.html"><span>does</span><wbr></wbr><span>Placed</span><wbr></wbr><span>Feature</span><wbr></wbr><span><span>Exist</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2110339231%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="does-placed-feature-exist.html"><span class="token function">doesPlacedFeatureExist</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span>RegistryKey&lt;PlacedFeature&gt;</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">{@return {@code true} if the given placed feature key exists in the registry, or {@code false} otherwise}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="81440846%2FFunctions%2F538063418" anchor-label="doesRegistryEntryExist" id="81440846%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="does-registry-entry-exist.html"><span>does</span><wbr></wbr><span>Registry</span><wbr></wbr><span>Entry</span><wbr></wbr><span><span>Exist</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="81440846%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="does-registry-entry-exist.html">T</a><span class="token operator">&gt; </span><a href="does-registry-entry-exist.html"><span class="token function">doesRegistryEntryExist</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">registryKey<span class="token operator">: </span>RegistryKey&lt;? extends Registry&lt;? extends T&gt;&gt;<span class="token punctuation">, </span></span><span class="parameter ">entryKey<span class="token operator">: </span>RegistryKey&lt;T&gt;</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Returns whether the given key to a registry entry exists in the registry or not.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1855814541%2FFunctions%2F538063418" anchor-label="getBiome" id="1855814541%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-biome.html"><span>get</span><wbr></wbr><span><span>Biome</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1855814541%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-biome.html"><span class="token function">getBiome</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>Biome</div><div class="brief ">{@return the biome with modifications by biome modifiers of higher priority already applied}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2032468801%2FFunctions%2F538063418" anchor-label="getBiomeHolder" id="2032468801%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-biome-holder.html"><span>get</span><wbr></wbr><span>Biome</span><wbr></wbr><span><span>Holder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2032468801%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-biome-holder.html"><span class="token function">getBiomeHolder</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>Holder&lt;Biome&gt;</div><div class="brief ">{@return the biome holder}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-822212466%2FFunctions%2F538063418" anchor-label="getBiomeKey" id="-822212466%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-biome-key.html"><span>get</span><wbr></wbr><span>Biome</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-822212466%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-biome-key.html"><span class="token function">getBiomeKey</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>RegistryKey&lt;Biome&gt;</div><div class="brief ">{@return the biome key}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2051724108%2FFunctions%2F538063418" anchor-label="getFeatureKey" id="-2051724108%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-feature-key.html"><span>get</span><wbr></wbr><span>Feature</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2051724108%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-feature-key.html"><span class="token function">getFeatureKey</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">configuredFeature<span class="token operator">: </span>ConfiguredFeature&lt;?, ?&gt;</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span>RegistryKey&lt;ConfiguredFeature&lt;?, ?&gt;&gt;<span class="token operator">&gt;</span></div><div class="brief ">Tries to retrieve the registry key for the given configured feature, which should be from this biomes current feature list.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1375420542%2FFunctions%2F538063418" anchor-label="getPlacedFeatureKey" id="-1375420542%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-placed-feature-key.html"><span>get</span><wbr></wbr><span>Placed</span><wbr></wbr><span>Feature</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1375420542%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-placed-feature-key.html"><span class="token function">getPlacedFeatureKey</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">placedFeature<span class="token operator">: </span>PlacedFeature</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span>RegistryKey&lt;PlacedFeature&gt;<span class="token operator">&gt;</span></div><div class="brief ">Tries to retrieve the registry key for the given placed feature, which should be from this biomes current feature list.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-284634786%2FFunctions%2F538063418" anchor-label="getStructureKey" id="-284634786%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-structure-key.html"><span>get</span><wbr></wbr><span>Structure</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-284634786%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-structure-key.html"><span class="token function">getStructureKey</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">structureFeature<span class="token operator">: </span>StructureFeature</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span>RegistryKey&lt;StructureFeature&gt;<span class="token operator">&gt;</span></div><div class="brief ">Tries to retrieve the registry key for the given configured feature, which should be from this biomes current structure list.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1718633939%2FFunctions%2F538063418" anchor-label="hasFeature" id="1718633939%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-feature.html"><span>has</span><wbr></wbr><span><span>Feature</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1718633939%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="has-feature.html"><span class="token function">hasFeature</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span>RegistryKey&lt;ConfiguredFeature&lt;?, ?&gt;&gt;</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">{@return {@code true} if this biome contains a placed feature referencing a configured feature with the given key, or {@code false} otherwise}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-399246535%2FFunctions%2F538063418" anchor-label="hasPlacedFeature" id="-399246535%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-placed-feature.html"><span>has</span><wbr></wbr><span>Placed</span><wbr></wbr><span><span>Feature</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-399246535%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="has-placed-feature.html"><span class="token function">hasPlacedFeature</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span>RegistryKey&lt;PlacedFeature&gt;</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">{@return {@code true} if this biome contains a placed feature with the given key, or {@code false} otherwise}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1613261851%2FFunctions%2F538063418" anchor-label="isIn" id="-1613261851%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-in.html"><span>is</span><wbr></wbr><span><span>In</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1613261851%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-in.html"><span class="token function">isIn</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span>TagKey&lt;Biome&gt;</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">{@return true if this biome is in the given {@link TagKey}, or {@code false} otherwise}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="123066628%2FFunctions%2F538063418" anchor-label="validForStructure" id="123066628%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="valid-for-structure.html"><span>valid</span><wbr></wbr><span>For</span><wbr></wbr><span><span>Structure</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="123066628%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="valid-for-structure.html"><span class="token function">validForStructure</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span>RegistryKey&lt;StructureFeature&gt;</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">{@return {@code true} if the configured structure with the given key can start in this biome in any chunk generator * used by the current world-save, or {@code false} otherwise}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AddCarversModifier</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>qsl</span>
+            </a>
+    </div>
+    <div>
+6.0.3+1.20.1    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":fatDokkaHtml/main">main</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="qsl::org.quiltmc.qsl.worldgen.biome.api.codec/AddCarversModifier///PointingToDeclaration//538063418">
+  <div class="breadcrumbs"><a href="../../../index.html">qsl</a><span class="delimiter">/</span><a href="../index.html">org.quiltmc.qsl.worldgen.biome.api.codec</a><span class="delimiter">/</span><span class="current">AddCarversModifier</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Add</span><wbr></wbr><span>Carvers</span><wbr></wbr><span><span>Modifier</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">AddCarversModifier</a> : <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Record.html">Record</a>, <a href="../../org.quiltmc.qsl.worldgen.biome.api/-biome-modifier/index.html">BiomeModifier</a></div><p class="paragraph">A biome modifier that adds carvers to a biome. </p><p class="paragraph"> The biome modifier identifier is <code class="lang-kotlin">quilt:add_carvers</code>.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>step</span></span></u></div></span></div><div><div class="title"><p class="paragraph">the carver generation step to add the carvers to</p></div></div></div></div><div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>carvers</span></span></u></div></span></div><div><div class="title"><p class="paragraph">registry keys for the carvers to add</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1014675872%2FConstructors%2F538063418" anchor-label="AddCarversModifier" id="-1014675872%2FConstructors%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-add-carvers-modifier.html"><span>Add</span><wbr></wbr><span>Carvers</span><wbr></wbr><span><span>Modifier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1014675872%2FConstructors%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1753820329%2FProperties%2F538063418" anchor-label="BIOME_MODIFIER_CODECS" id="1753820329%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../org.quiltmc.qsl.worldgen.biome.api/-biome-modifier/-b-i-o-m-e_-m-o-d-i-f-i-e-r_-c-o-d-e-c-s.html"><span><span>BIOME_MODIFIER_CODECS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1753820329%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../org.quiltmc.qsl.worldgen.biome.api/-biome-modifier/-b-i-o-m-e_-m-o-d-i-f-i-e-r_-c-o-d-e-c-s.html">BIOME_MODIFIER_CODECS</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.data.callback.api/-codec-map/index.html">CodecMap</a><span class="token operator">&lt;</span><a href="../../org.quiltmc.qsl.worldgen.biome.api/-biome-modifier/index.html">BiomeModifier</a><span class="token operator">&gt;</span></div><div class="brief ">Stores biome modifier codecs.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1019198474%2FProperties%2F538063418" anchor-label="BIOME_SELECTOR_CODEC" id="-1019198474%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../org.quiltmc.qsl.worldgen.biome.api/-biome-modifier/-b-i-o-m-e_-s-e-l-e-c-t-o-r_-c-o-d-e-c.html"><span><span>BIOME_SELECTOR_CODEC</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1019198474%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../org.quiltmc.qsl.worldgen.biome.api/-biome-modifier/-b-i-o-m-e_-s-e-l-e-c-t-o-r_-c-o-d-e-c.html">BIOME_SELECTOR_CODEC</a><span class="token operator">: </span>Codec&lt;CodecAwarePredicate&lt;BiomeSelectionContext&gt;&gt;</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-956760655%2FProperties%2F538063418" anchor-label="BIOME_SELECTOR_CODECS" id="-956760655%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../org.quiltmc.qsl.worldgen.biome.api/-biome-modifier/-b-i-o-m-e_-s-e-l-e-c-t-o-r_-c-o-d-e-c-s.html"><span><span>BIOME_SELECTOR_CODECS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-956760655%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../org.quiltmc.qsl.worldgen.biome.api/-biome-modifier/-b-i-o-m-e_-s-e-l-e-c-t-o-r_-c-o-d-e-c-s.html">BIOME_SELECTOR_CODECS</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.data.callback.api.predicate/-predicate-codec-map/index.html">PredicateCodecMap</a><span class="token operator">&lt;</span><a href="../../org.quiltmc.qsl.worldgen.biome.api/-biome-selection-context/index.html">BiomeSelectionContext</a><span class="token operator">&gt;</span></div><div class="brief ">Stores biome selector codecs.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2092902198%2FProperties%2F538063418" anchor-label="CODEC" id="-2092902198%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-o-d-e-c.html"><span><span>CODEC</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2092902198%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-c-o-d-e-c.html">CODEC</a><span class="token operator">: </span>Codec&lt;AddCarversModifier&gt;</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1487548650%2FProperties%2F538063418" anchor-label="CODEC_ID" id="-1487548650%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-o-d-e-c_-i-d.html"><span><span>CODEC_ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1487548650%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-c-o-d-e-c_-i-d.html">CODEC_ID</a><span class="token operator">: </span>Identifier</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1797860926%2FFunctions%2F538063418" anchor-label="equals" id="-1797860926%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../org.quiltmc.qsl.testing.api.game/-test-registration-context/index.html#-1797860926%2FFunctions%2F538063418"><span><span>equals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1797860926%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../org.quiltmc.qsl.testing.api.game/-test-registration-context/index.html#-1797860926%2FFunctions%2F538063418"><span class="token function">equals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-634268129%2FFunctions%2F538063418" anchor-label="getCodecId" id="-634268129%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-codec-id.html"><span>get</span><wbr></wbr><span>Codec</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-634268129%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-codec-id.html"><span class="token function">getCodecId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>Identifier</div><div class="brief ">{@return the identifier of the codec that can be used to encode this object, or {@code null} if this object is not encodable}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1761002009%2FFunctions%2F538063418" anchor-label="hashCode" id="1761002009%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../org.quiltmc.qsl.testing.api.game/-test-registration-context/index.html#1761002009%2FFunctions%2F538063418"><span>hash</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1761002009%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../org.quiltmc.qsl.testing.api.game/-test-registration-context/index.html#1761002009%2FFunctions%2F538063418"><span class="token function">hashCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2028018451%2FFunctions%2F538063418" anchor-label="modify" id="-2028018451%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="modify.html"><span><span>modify</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2028018451%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="modify.html"><span class="token function">modify</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">selectionContext<span class="token operator">: </span><a href="../../org.quiltmc.qsl.worldgen.biome.api/-biome-selection-context/index.html">BiomeSelectionContext</a><span class="token punctuation">, </span></span><span class="parameter ">modificationContext<span class="token operator">: </span><a href="../../org.quiltmc.qsl.worldgen.biome.api/-biome-modification-context/index.html">BiomeModificationContext</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Applies this biome modifier to the biome.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-293223997%2FFunctions%2F538063418" anchor-label="shouldModify" id="-293223997%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="should-modify.html"><span>should</span><wbr></wbr><span><span>Modify</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-293223997%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="should-modify.html"><span class="token function">shouldModify</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="../../org.quiltmc.qsl.worldgen.biome.api/-biome-selection-context/index.html">BiomeSelectionContext</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">{@return whether this biome modifier should be applied to the biome}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1582835944%2FFunctions%2F538063418" anchor-label="toString" id="1582835944%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../org.quiltmc.qsl.testing.api.game/-test-registration-context/index.html#1582835944%2FFunctions%2F538063418"><span>to</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1582835944%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../org.quiltmc.qsl.testing.api.game/-test-registration-context/index.html#1582835944%2FFunctions%2F538063418"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

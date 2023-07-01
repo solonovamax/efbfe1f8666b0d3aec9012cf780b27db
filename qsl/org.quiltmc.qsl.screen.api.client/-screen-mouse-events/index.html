@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ScreenMouseEvents</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>qsl</span>
+            </a>
+    </div>
+    <div>
+6.0.3+1.20.1    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":fatDokkaHtml/main">main</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="qsl::org.quiltmc.qsl.screen.api.client/ScreenMouseEvents///PointingToDeclaration//538063418">
+  <div class="breadcrumbs"><a href="../../../index.html">qsl</a><span class="delimiter">/</span><a href="../index.html">org.quiltmc.qsl.screen.api.client</a><span class="delimiter">/</span><span class="current">ScreenMouseEvents</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Screen</span><wbr></wbr><span>Mouse</span><wbr></wbr><span><span>Events</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ScreenMouseEvents</a></div><p class="paragraph">Events related to use of the mouse in a Screen. </p><p class="paragraph"> Events are fired in the following order: </p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">AllowX -&gt; BeforeX -&gt; AfterX</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div> If the result of the Allow event is <a href="../../org.quiltmc.qsl.base.api.util/-tri-state/-f-a-l-s-e/index.html">FALSE</a>, then Before and After are not called.<h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-screen-events/index.html"><span>Screen</span><wbr></wbr><span><span>Events</span></span></a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-246272945%2FConstructors%2F538063418" anchor-label="ScreenMouseEvents" id="-246272945%2FConstructors%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-screen-mouse-events.html"><span>Screen</span><wbr></wbr><span>Mouse</span><wbr></wbr><span><span>Events</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-246272945%2FConstructors%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-831882091%2FClasslikes%2F538063418" anchor-label="AfterMouseClick" id="-831882091%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-after-mouse-click/index.html"><span>After</span><wbr></wbr><span>Mouse</span><wbr></wbr><span><span>Click</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-831882091%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-after-mouse-click/index.html">AfterMouseClick</a> : <a href="../../org.quiltmc.qsl.base.api.event.client/-client-event-aware-listener/index.html">ClientEventAwareListener</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2115275766%2FClasslikes%2F538063418" anchor-label="AfterMouseRelease" id="2115275766%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-after-mouse-release/index.html"><span>After</span><wbr></wbr><span>Mouse</span><wbr></wbr><span><span>Release</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2115275766%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-after-mouse-release/index.html">AfterMouseRelease</a> : <a href="../../org.quiltmc.qsl.base.api.event.client/-client-event-aware-listener/index.html">ClientEventAwareListener</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="746912408%2FClasslikes%2F538063418" anchor-label="AfterMouseScroll" id="746912408%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-after-mouse-scroll/index.html"><span>After</span><wbr></wbr><span>Mouse</span><wbr></wbr><span><span>Scroll</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="746912408%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-after-mouse-scroll/index.html">AfterMouseScroll</a> : <a href="../../org.quiltmc.qsl.base.api.event.client/-client-event-aware-listener/index.html">ClientEventAwareListener</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2086289400%2FClasslikes%2F538063418" anchor-label="AllowMouseClick" id="-2086289400%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-allow-mouse-click/index.html"><span>Allow</span><wbr></wbr><span>Mouse</span><wbr></wbr><span><span>Click</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2086289400%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-allow-mouse-click/index.html">AllowMouseClick</a> : <a href="../../org.quiltmc.qsl.base.api.event.client/-client-event-aware-listener/index.html">ClientEventAwareListener</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-779305303%2FClasslikes%2F538063418" anchor-label="AllowMouseRelease" id="-779305303%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-allow-mouse-release/index.html"><span>Allow</span><wbr></wbr><span>Mouse</span><wbr></wbr><span><span>Release</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-779305303%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-allow-mouse-release/index.html">AllowMouseRelease</a> : <a href="../../org.quiltmc.qsl.base.api.event.client/-client-event-aware-listener/index.html">ClientEventAwareListener</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="514991493%2FClasslikes%2F538063418" anchor-label="AllowMouseScroll" id="514991493%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-allow-mouse-scroll/index.html"><span>Allow</span><wbr></wbr><span>Mouse</span><wbr></wbr><span><span>Scroll</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="514991493%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-allow-mouse-scroll/index.html">AllowMouseScroll</a> : <a href="../../org.quiltmc.qsl.base.api.event.client/-client-event-aware-listener/index.html">ClientEventAwareListener</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="775695276%2FClasslikes%2F538063418" anchor-label="BeforeMouseClick" id="775695276%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-before-mouse-click/index.html"><span>Before</span><wbr></wbr><span>Mouse</span><wbr></wbr><span><span>Click</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="775695276%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-before-mouse-click/index.html">BeforeMouseClick</a> : <a href="../../org.quiltmc.qsl.base.api.event.client/-client-event-aware-listener/index.html">ClientEventAwareListener</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="808898893%2FClasslikes%2F538063418" anchor-label="BeforeMouseRelease" id="808898893%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-before-mouse-release/index.html"><span>Before</span><wbr></wbr><span>Mouse</span><wbr></wbr><span><span>Release</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="808898893%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-before-mouse-release/index.html">BeforeMouseRelease</a> : <a href="../../org.quiltmc.qsl.base.api.event.client/-client-event-aware-listener/index.html">ClientEventAwareListener</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-957796767%2FClasslikes%2F538063418" anchor-label="BeforeMouseScroll" id="-957796767%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-before-mouse-scroll/index.html"><span>Before</span><wbr></wbr><span>Mouse</span><wbr></wbr><span><span>Scroll</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-957796767%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-before-mouse-scroll/index.html">BeforeMouseScroll</a> : <a href="../../org.quiltmc.qsl.base.api.event.client/-client-event-aware-listener/index.html">ClientEventAwareListener</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1814627638%2FProperties%2F538063418" anchor-label="AFTER_MOUSE_CLICK" id="1814627638%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-f-t-e-r_-m-o-u-s-e_-c-l-i-c-k.html"><span><span>AFTER_MOUSE_CLICK</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1814627638%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-a-f-t-e-r_-m-o-u-s-e_-c-l-i-c-k.html">AFTER_MOUSE_CLICK</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-after-mouse-click/index.html">ScreenMouseEvents.AfterMouseClick</a><span class="token operator">&gt;</span></div><div class="brief ">An event that is called after a mouse click is processed for a screen.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2027673769%2FProperties%2F538063418" anchor-label="AFTER_MOUSE_RELEASE" id="-2027673769%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-f-t-e-r_-m-o-u-s-e_-r-e-l-e-a-s-e.html"><span><span>AFTER_MOUSE_RELEASE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2027673769%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-a-f-t-e-r_-m-o-u-s-e_-r-e-l-e-a-s-e.html">AFTER_MOUSE_RELEASE</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-after-mouse-release/index.html">ScreenMouseEvents.AfterMouseRelease</a><span class="token operator">&gt;</span></div><div class="brief ">An event that is called after the release of a mouse click is processed for a screen.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1839074255%2FProperties%2F538063418" anchor-label="AFTER_MOUSE_SCROLL" id="1839074255%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-f-t-e-r_-m-o-u-s-e_-s-c-r-o-l-l.html"><span><span>AFTER_MOUSE_SCROLL</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1839074255%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-a-f-t-e-r_-m-o-u-s-e_-s-c-r-o-l-l.html">AFTER_MOUSE_SCROLL</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-after-mouse-scroll/index.html">ScreenMouseEvents.AfterMouseScroll</a><span class="token operator">&gt;</span></div><div class="brief ">An event that is called after mouse scrolling is processed for a screen.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1079953431%2FProperties%2F538063418" anchor-label="ALLOW_MOUSE_CLICK" id="-1079953431%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-l-l-o-w_-m-o-u-s-e_-c-l-i-c-k.html"><span><span>ALLOW_MOUSE_CLICK</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1079953431%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-a-l-l-o-w_-m-o-u-s-e_-c-l-i-c-k.html">ALLOW_MOUSE_CLICK</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-allow-mouse-click/index.html">ScreenMouseEvents.AllowMouseClick</a><span class="token operator">&gt;</span></div><div class="brief ">An event that checks if the mouse click should be allowed.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-581273270%2FProperties%2F538063418" anchor-label="ALLOW_MOUSE_RELEASE" id="-581273270%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-l-l-o-w_-m-o-u-s-e_-r-e-l-e-a-s-e.html"><span><span>ALLOW_MOUSE_RELEASE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-581273270%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-a-l-l-o-w_-m-o-u-s-e_-r-e-l-e-a-s-e.html">ALLOW_MOUSE_RELEASE</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-allow-mouse-release/index.html">ScreenMouseEvents.AllowMouseRelease</a><span class="token operator">&gt;</span></div><div class="brief ">An event that checks if the mouse click should be allowed to release in a screen.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1993592964%2FProperties%2F538063418" anchor-label="ALLOW_MOUSE_SCROLL" id="-1993592964%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-l-l-o-w_-m-o-u-s-e_-s-c-r-o-l-l.html"><span><span>ALLOW_MOUSE_SCROLL</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1993592964%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-a-l-l-o-w_-m-o-u-s-e_-s-c-r-o-l-l.html">ALLOW_MOUSE_SCROLL</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-allow-mouse-scroll/index.html">ScreenMouseEvents.AllowMouseScroll</a><span class="token operator">&gt;</span></div><div class="brief ">An event that is checks if the mouse should be allowed to scroll in a screen.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="256876875%2FProperties%2F538063418" anchor-label="BEFORE_MOUSE_CLICK" id="256876875%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-e-f-o-r-e_-m-o-u-s-e_-c-l-i-c-k.html"><span><span>BEFORE_MOUSE_CLICK</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="256876875%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-b-e-f-o-r-e_-m-o-u-s-e_-c-l-i-c-k.html">BEFORE_MOUSE_CLICK</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-before-mouse-click/index.html">ScreenMouseEvents.BeforeMouseClick</a><span class="token operator">&gt;</span></div><div class="brief ">An event that is called before a mouse click is processed for a screen.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-82570708%2FProperties%2F538063418" anchor-label="BEFORE_MOUSE_RELEASE" id="-82570708%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-e-f-o-r-e_-m-o-u-s-e_-r-e-l-e-a-s-e.html"><span><span>BEFORE_MOUSE_RELEASE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-82570708%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-b-e-f-o-r-e_-m-o-u-s-e_-r-e-l-e-a-s-e.html">BEFORE_MOUSE_RELEASE</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-before-mouse-release/index.html">ScreenMouseEvents.BeforeMouseRelease</a><span class="token operator">&gt;</span></div><div class="brief ">An event that is called before the release of a mouse click is processed for a screen.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="793440858%2FProperties%2F538063418" anchor-label="BEFORE_MOUSE_SCROLL" id="793440858%2FProperties%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-e-f-o-r-e_-m-o-u-s-e_-s-c-r-o-l-l.html"><span><span>BEFORE_MOUSE_SCROLL</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="793440858%2FProperties%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-b-e-f-o-r-e_-m-o-u-s-e_-s-c-r-o-l-l.html">BEFORE_MOUSE_SCROLL</a><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-before-mouse-scroll/index.html">ScreenMouseEvents.BeforeMouseScroll</a><span class="token operator">&gt;</span></div><div class="brief ">An event that is called after mouse scrolling is processed for a screen.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

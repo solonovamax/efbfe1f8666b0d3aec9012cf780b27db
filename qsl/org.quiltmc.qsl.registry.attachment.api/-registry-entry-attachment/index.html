@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>RegistryEntryAttachment</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>qsl</span>
+            </a>
+    </div>
+    <div>
+6.0.3+1.20.1    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":fatDokkaHtml/main">main</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="qsl::org.quiltmc.qsl.registry.attachment.api/RegistryEntryAttachment///PointingToDeclaration//538063418">
+  <div class="breadcrumbs"><a href="../../../index.html">qsl</a><span class="delimiter">/</span><a href="../index.html">org.quiltmc.qsl.registry.attachment.api</a><span class="delimiter">/</span><span class="current">RegistryEntryAttachment</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Registry</span><wbr></wbr><span>Entry</span><wbr></wbr><span><span>Attachment</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">RegistryEntryAttachment</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html">V</a><span class="token operator">&gt;</span> : <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html">Iterable</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html">T</a><span class="token operator">&gt; </span></div><p class="paragraph">Represents an arbitrary value attached to a registry entry.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>&lt;R&gt;</span></span></u></div></span></div><div><div class="title"><p class="paragraph">type of the entries in the registry</p></div></div></div></div><div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>&lt;V&gt;</span></span></u></div></span></div><div><div class="title"><p class="paragraph">attached value type</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="60391700%2FClasslikes%2F538063418" anchor-label="Builder" id="60391700%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-builder/index.html"><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="60391700%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-builder/index.html">Builder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-builder/index.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-builder/index.html">V</a><span class="token operator">&gt;</span></div><div class="brief ">Builder for attachments.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1628887139%2FClasslikes%2F538063418" anchor-label="Entry" id="-1628887139%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-entry/index.html"><span><span>Entry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1628887139%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-entry/index.html">Entry</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-entry/index.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-entry/index.html">V</a><span class="token operator">&gt;</span> : <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Record.html">Record</a></div><div class="brief ">Specifies a value association entry.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="951080796%2FClasslikes%2F538063418" anchor-label="Side" id="951080796%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-side/index.html"><span><span>Side</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="951080796%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-side/index.html">Side</a></div><div class="brief ">Specifies on what side this attachment should exist.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="545108443%2FClasslikes%2F538063418" anchor-label="TagEntry" id="545108443%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tag-entry/index.html"><span>Tag</span><wbr></wbr><span><span>Entry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="545108443%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tag-entry/index.html">TagEntry</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-tag-entry/index.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-tag-entry/index.html">V</a><span class="token operator">&gt;</span> : <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Record.html">Record</a></div><div class="brief ">Specifies a tag value association entry.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1246658726%2FClasslikes%2F538063418" anchor-label="TagValueAdded" id="1246658726%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tag-value-added/index.html"><span>Tag</span><wbr></wbr><span>Value</span><wbr></wbr><span><span>Added</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1246658726%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-tag-value-added/index.html">TagValueAdded</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-tag-value-added/index.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-tag-value-added/index.html">V</a><span class="token operator">&gt;</span></div><div class="brief ">Event that is fired on a value being associated with a tag.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-909227002%2FClasslikes%2F538063418" anchor-label="TagValueRemoved" id="-909227002%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tag-value-removed/index.html"><span>Tag</span><wbr></wbr><span>Value</span><wbr></wbr><span><span>Removed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-909227002%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-tag-value-removed/index.html">TagValueRemoved</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-tag-value-removed/index.html">R</a><span class="token operator">&gt;</span></div><div class="brief ">Event that is fired on a tag's associated value being removed.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="147870756%2FClasslikes%2F538063418" anchor-label="ValueAdded" id="147870756%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-value-added/index.html"><span>Value</span><wbr></wbr><span><span>Added</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="147870756%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-value-added/index.html">ValueAdded</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-value-added/index.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-value-added/index.html">V</a><span class="token operator">&gt;</span></div><div class="brief ">Event that is fired on a value being associated with an entry.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-282511356%2FClasslikes%2F538063418" anchor-label="ValueRemoved" id="-282511356%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-value-removed/index.html"><span>Value</span><wbr></wbr><span><span>Removed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-282511356%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html"><span class="token annotation builtin">FunctionalInterface</span></a></div></div><span class="token keyword">interface </span><a href="-value-removed/index.html">ValueRemoved</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-value-removed/index.html">R</a><span class="token operator">&gt;</span></div><div class="brief ">Event that is fired on an entry's associated value being removed.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-844380406%2FFunctions%2F538063418" anchor-label="boolBuilder" id="-844380406%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bool-builder.html"><span>bool</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-844380406%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="bool-builder.html">R</a><span class="token operator">&gt; </span><a href="bool-builder.html"><span class="token function">boolBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">registry<span class="token operator">: </span>Registry&lt;R&gt;<span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span>Identifier</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-builder/index.html">RegistryEntryAttachment.Builder</a><span class="token operator">&lt;</span><a href="bool-builder.html">R</a><span class="token punctuation">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a><span class="token operator">&gt;</span></div><div class="brief ">Creates a builder for a boolean attachment.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="928299058%2FFunctions%2F538063418" anchor-label="builder" id="928299058%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="builder.html"><span><span>builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="928299058%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="builder.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="builder.html">V</a><span class="token operator">&gt; </span><a href="builder.html"><span class="token function">builder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">registry<span class="token operator">: </span>Registry&lt;R&gt;<span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span>Identifier<span class="token punctuation">, </span></span><span class="parameter ">valueClass<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><a href="builder.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">codec<span class="token operator">: </span>Codec&lt;V&gt;</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-builder/index.html">RegistryEntryAttachment.Builder</a><span class="token operator">&lt;</span><a href="builder.html">R</a><span class="token punctuation">, </span><a href="builder.html">V</a><span class="token operator">&gt;</span></div><div class="brief ">Creates a builder for an attachment.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="40880678%2FFunctions%2F538063418" anchor-label="codec" id="40880678%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="codec.html"><span><span>codec</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="40880678%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="codec.html"><span class="token function">codec</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>Codec&lt;V&gt;</div><div class="brief ">Gets the <code class="lang-kotlin">Codec</code> used to (de)serialize this attachment's values.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1813522726%2FFunctions%2F538063418" anchor-label="dispatchedBuilder" id="1813522726%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dispatched-builder.html"><span>dispatched</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1813522726%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="dispatched-builder.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="dispatched-builder.html">V</a><span class="token operator"> : </span><a href="../-dispatched-type/index.html">DispatchedType</a><span class="token operator">?</span><span class="token operator">&gt; </span><a href="dispatched-builder.html"><span class="token function">dispatchedBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">registry<span class="token operator">: </span>Registry&lt;R&gt;<span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span>Identifier<span class="token punctuation">, </span></span><span class="parameter ">valueClass<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><a href="dispatched-builder.html">V</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">codec<span class="token operator">: </span><span class="token punctuation">(</span>Identifier<span class="token punctuation">)</span><span class="token operator"> -&gt; </span>Codec&lt;? extends V&gt;</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-builder/index.html">RegistryEntryAttachment.Builder</a><span class="token operator">&lt;</span><a href="dispatched-builder.html">R</a><span class="token punctuation">, </span><a href="dispatched-builder.html">V</a><span class="token operator">&gt;</span></div><div class="brief ">Creates a builder for an attachment using dispatched codecs for polymorphic types.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="474980593%2FFunctions%2F538063418" anchor-label="doubleBuilder" id="474980593%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="double-builder.html"><span>double</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="474980593%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="double-builder.html">R</a><span class="token operator">&gt; </span><a href="double-builder.html"><span class="token function">doubleBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">registry<span class="token operator">: </span>Registry&lt;R&gt;<span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span>Identifier</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-builder/index.html">RegistryEntryAttachment.Builder</a><span class="token operator">&lt;</span><a href="double-builder.html">R</a><span class="token punctuation">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html">Double</a><span class="token operator">&gt;</span></div><div class="brief ">Creates a builder for a double attachment.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-407895172%2FFunctions%2F538063418" anchor-label="entryIterator" id="-407895172%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="entry-iterator.html"><span>entry</span><wbr></wbr><span><span>Iterator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-407895172%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="entry-iterator.html"><span class="token function">entryIterator</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html">Iterator</a><span class="token operator">&lt;</span><a href="-entry/index.html">RegistryEntryAttachment.Entry</a><span class="token operator">&lt;</span><a href="index.html">R</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief ">{@return an iterator over all the values with a direct entry}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="997847646%2FFunctions%2F538063418" anchor-label="floatBuilder" id="997847646%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="float-builder.html"><span>float</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="997847646%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="float-builder.html">R</a><span class="token operator">&gt; </span><a href="float-builder.html"><span class="token function">floatBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">registry<span class="token operator">: </span>Registry&lt;R&gt;<span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span>Identifier</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-builder/index.html">RegistryEntryAttachment.Builder</a><span class="token operator">&lt;</span><a href="float-builder.html">R</a><span class="token punctuation">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Float.html">Float</a><span class="token operator">&gt;</span></div><div class="brief ">Creates a builder for a float attachment.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-655675525%2FFunctions%2F538063418" anchor-label="forEach" id="-655675525%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-655675525%2FFunctions%2F538063418"><span>for</span><wbr></wbr><span><span>Each</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-655675525%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-655675525%2FFunctions%2F538063418"><span class="token function">forEach</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html">Consumer</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1890333948%2FFunctions%2F538063418" anchor-label="get" id="1890333948%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get.html"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1890333948%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">entry<span class="token operator">: </span><a href="index.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span><a href="index.html">V</a><span class="token operator">&gt;</span></div><div class="brief ">Gets the value associated with this attachment for the specified entry.</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get.html">R</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="get.html">V</a><span class="token operator">&gt; </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">registry<span class="token operator">: </span>Registry&lt;R&gt;<span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span>Identifier<span class="token punctuation">, </span></span><span class="parameter ">valueClass<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><a href="get.html">V</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span><a href="index.html">RegistryEntryAttachment</a><span class="token operator">&lt;</span><a href="get.html">R</a><span class="token punctuation">, </span><a href="get.html">V</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief ">Retrieves an already-registered attachment.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-235905845%2FFunctions%2F538063418" anchor-label="getNullable" id="-235905845%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-nullable.html"><span>get</span><wbr></wbr><span><span>Nullable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-235905845%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-nullable.html"><span class="token function">getNullable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">entry<span class="token operator">: </span><a href="index.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">V</a></div><div class="brief ">Gets the value associated with this attachment for the specified entry.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-889169501%2FFunctions%2F538063418" anchor-label="id" id="-889169501%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="id.html"><span><span>id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-889169501%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="id.html"><span class="token function">id</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>Identifier</div><div class="brief ">Gets the identifier of this attachment.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1116131313%2FFunctions%2F538063418" anchor-label="intBuilder" id="1116131313%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="int-builder.html"><span>int</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1116131313%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="int-builder.html">R</a><span class="token operator">&gt; </span><a href="int-builder.html"><span class="token function">intBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">registry<span class="token operator">: </span>Registry&lt;R&gt;<span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span>Identifier</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-builder/index.html">RegistryEntryAttachment.Builder</a><span class="token operator">&lt;</span><a href="int-builder.html">R</a><span class="token punctuation">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html">Integer</a><span class="token operator">&gt;</span></div><div class="brief ">Creates a builder for an integer attachment.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1606146105%2FFunctions%2F538063418" anchor-label="iterator" id="-1606146105%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1606146105%2FFunctions%2F538063418"><span><span>iterator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1606146105%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1606146105%2FFunctions%2F538063418"><span class="token function">iterator</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html">Iterator</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="851631547%2FFunctions%2F538063418" anchor-label="keySet" id="851631547%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="key-set.html"><span>key</span><wbr></wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="851631547%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="key-set.html"><span class="token function">keySet</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="index.html">R</a><span class="token operator">&gt;</span></div><div class="brief ">{@return a set of all registry entries with an associated value}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2131931420%2FFunctions%2F538063418" anchor-label="longBuilder" id="2131931420%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="long-builder.html"><span>long</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2131931420%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="long-builder.html">R</a><span class="token operator">&gt; </span><a href="long-builder.html"><span class="token function">longBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">registry<span class="token operator">: </span>Registry&lt;R&gt;<span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span>Identifier</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-builder/index.html">RegistryEntryAttachment.Builder</a><span class="token operator">&lt;</span><a href="long-builder.html">R</a><span class="token punctuation">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html">Long</a><span class="token operator">&gt;</span></div><div class="brief ">Creates a builder for a long attachment.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-841424197%2FFunctions%2F538063418" anchor-label="put" id="-841424197%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put.html"><span><span>put</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-841424197%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="put.html"><span class="token function">put</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">entry<span class="token operator">: </span><a href="index.html">R</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="index.html">V</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Associates a value with an entry.</div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="put.html"><span class="token function">put</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span>TagKey&lt;R&gt;<span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="index.html">V</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Associates a value with a tag.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1416324097%2FFunctions%2F538063418" anchor-label="registry" id="1416324097%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="registry.html"><span><span>registry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1416324097%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="registry.html"><span class="token function">registry</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>Registry&lt;R&gt;</div><div class="brief ">Gets the registry this attachment is attached to.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1136778993%2FFunctions%2F538063418" anchor-label="remove" id="-1136778993%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove.html"><span><span>remove</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1136778993%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove.html"><span class="token function">remove</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">entry<span class="token operator">: </span><a href="index.html">R</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Removes any value associated with an entry.</div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove.html"><span class="token function">remove</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span>TagKey&lt;R&gt;</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Removes any value associated with a tag.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1824071513%2FFunctions%2F538063418" anchor-label="side" id="-1824071513%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="side.html"><span><span>side</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1824071513%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="side.html"><span class="token function">side</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-side/index.html">RegistryEntryAttachment.Side</a></div><div class="brief ">Gets the side this attachment should exist on.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-677603448%2FFunctions%2F538063418" anchor-label="spliterator" id="-677603448%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-677603448%2FFunctions%2F538063418"><span><span>spliterator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-677603448%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-677603448%2FFunctions%2F538063418"><span class="token function">spliterator</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Spliterator.html">Spliterator</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2138035505%2FFunctions%2F538063418" anchor-label="stringBuilder" id="2138035505%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="string-builder.html"><span>string</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2138035505%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="string-builder.html">R</a><span class="token operator">&gt; </span><a href="string-builder.html"><span class="token function">stringBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">registry<span class="token operator">: </span>Registry&lt;R&gt;<span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span>Identifier</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-builder/index.html">RegistryEntryAttachment.Builder</a><span class="token operator">&lt;</span><a href="string-builder.html">R</a><span class="token punctuation">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token operator">&gt;</span></div><div class="brief ">Creates a builder for a string attachment.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="163805656%2FFunctions%2F538063418" anchor-label="tagEntryIterator" id="163805656%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tag-entry-iterator.html"><span>tag</span><wbr></wbr><span>Entry</span><wbr></wbr><span><span>Iterator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="163805656%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="tag-entry-iterator.html"><span class="token function">tagEntryIterator</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html">Iterator</a><span class="token operator">&lt;</span><a href="-tag-entry/index.html">RegistryEntryAttachment.TagEntry</a><span class="token operator">&lt;</span><a href="index.html">R</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief ">{@return an iterator over all the tag values with a direct entry}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-918055201%2FFunctions%2F538063418" anchor-label="tagKeySet" id="-918055201%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tag-key-set.html"><span>tag</span><wbr></wbr><span>Key</span><wbr></wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-918055201%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="tag-key-set.html"><span class="token function">tagKeySet</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span>TagKey&lt;R&gt;<span class="token operator">&gt;</span></div><div class="brief ">{@return a set of all tags with an associated value}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2036553389%2FFunctions%2F538063418" anchor-label="tagValueAddedEvent" id="2036553389%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tag-value-added-event.html"><span>tag</span><wbr></wbr><span>Value</span><wbr></wbr><span>Added</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2036553389%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="tag-value-added-event.html"><span class="token function">tagValueAddedEvent</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-tag-value-added/index.html">RegistryEntryAttachment.TagValueAdded</a><span class="token operator">&lt;</span><a href="index.html">R</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief ">{@return this attachment's &quot;value associated with tag&quot; event}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2136032141%2FFunctions%2F538063418" anchor-label="tagValueRemovedEvent" id="2136032141%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tag-value-removed-event.html"><span>tag</span><wbr></wbr><span>Value</span><wbr></wbr><span>Removed</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2136032141%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="tag-value-removed-event.html"><span class="token function">tagValueRemovedEvent</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-tag-value-removed/index.html">RegistryEntryAttachment.TagValueRemoved</a><span class="token operator">&lt;</span><a href="index.html">R</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief ">{@return this attachment's &quot;tag's associated value removed&quot; event}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1907095727%2FFunctions%2F538063418" anchor-label="valueAddedEvent" id="-1907095727%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="value-added-event.html"><span>value</span><wbr></wbr><span>Added</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1907095727%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="value-added-event.html"><span class="token function">valueAddedEvent</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-value-added/index.html">RegistryEntryAttachment.ValueAdded</a><span class="token operator">&lt;</span><a href="index.html">R</a><span class="token punctuation">, </span><a href="index.html">V</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief ">{@return this attachment's &quot;value associated with entry&quot; event}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1067778231%2FFunctions%2F538063418" anchor-label="valueClass" id="1067778231%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="value-class.html"><span>value</span><wbr></wbr><span><span>Class</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1067778231%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="value-class.html"><span class="token function">valueClass</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><a href="index.html">V</a><span class="token operator">&gt;</span></div><div class="brief ">Gets the base class of this attachment's values.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="450386737%2FFunctions%2F538063418" anchor-label="valueRemovedEvent" id="450386737%2FFunctions%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="value-removed-event.html"><span>value</span><wbr></wbr><span>Removed</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="450386737%2FFunctions%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="value-removed-event.html"><span class="token function">valueRemovedEvent</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.quiltmc.qsl.base.api.event/-event/index.html">Event</a><span class="token operator">&lt;</span><a href="-value-removed/index.html">RegistryEntryAttachment.ValueRemoved</a><span class="token operator">&lt;</span><a href="index.html">R</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief ">{@return this attachment's &quot;entry's associated value removed&quot; event}</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

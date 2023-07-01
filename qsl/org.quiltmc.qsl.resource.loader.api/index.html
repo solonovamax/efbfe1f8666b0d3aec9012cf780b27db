@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.quiltmc.qsl.resource.loader.api</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../index.html">
+                    <span>qsl</span>
+            </a>
+    </div>
+    <div>
+6.0.3+1.20.1    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":fatDokkaHtml/main">main</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="qsl::org.quiltmc.qsl.resource.loader.api////PointingToDeclaration//538063418">
+  <div class="breadcrumbs"><a href="../../index.html">qsl</a><span class="delimiter">/</span><span class="current">org.quiltmc.qsl.resource.loader.api</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+    <div class="platform-hinted UnderCoverText" data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><h2 class="">The Resource Loader and its APIs.</h2><h3 class="">Quick note about vocabulary in Resource Loader and Minecraft:</h3><ul><li>Resource Pack refers to both client-sided resource pack and data pack.</li><li>Virtual Resource Pack refers to a resource pack that may be generated at runtime, or simply doesn't exist directly on disk.</li><li>Group Resource Pack refers to a virtual resource pack that groups multiple resource packs together.</li></ul><h3 class="">Modded Resource Pack Handling</h3> The Resource Loader will create a resource pack for each mod that provides resources in <code class="lang-kotlin">assets</code> or <code class="lang-kotlin">data</code> top-level directories of the mod. Those mod resource packs are grouped into the default resource pack. They can override the default resource pack, but it is not recommended as it forcefully introduce changes that users may not want, instead using a built-in resource pack would be better. Built-in Mod Resource Pack The Resource Loader adds manually registered mod resource packs. Those resource packs are registered with <a href="-resource-loader/register-builtin-resource-pack.html">registerBuiltinResourcePack</a>, or <a href="-resource-loader/register-builtin-resource-pack.html">registerBuiltinResourcePack</a>Resource Pack InjectionResource Pack Profile Provider The Resource Loader gives a method to register ResourcePackProviders, which may be used to add new resource packs that are visible to the player in the resource pack selection screens or the <code class="lang-kotlin">datapack</code> command. Virtual Resource Packs Some mods may need to rely on virtual resource packs to generate resources on the fly. The Resource Loader provides utilities to work with such kind of resource packs: <ul><li><a href="-resource-loader/get-register-default-resource-pack-event.html">getRegisterDefaultResourcePackEvent</a> - an event to register resource packs that are injected into the default resource pack. </li><li><a href="-resource-loader/get-register-top-resource-pack-event.html">getRegisterTopResourcePackEvent</a> - an event to register resource packs that are on the top of the resource pack hierarchy, those resource packs are invisible to the player. </li><li><a href="-in-memory-resource-pack/index.html">org.quiltmc.qsl.resource.loader.api.InMemoryResourcePack</a> - a resource pack implementation whose resources are stored in the live memory.</li><li><a href="-group-resource-pack/index.html">org.quiltmc.qsl.resource.loader.api.GroupResourcePack</a> - a resource pack implementation which can be used to group multiple resource packs into one. </li></ul>Extending Vanilla Built-In Resource Packs The Resource Loader will inject resources into vanilla built-in resource packs for each mod that provides the resources in a top-level directory inside the mod with the pack's raw name (for example, <code class="lang-kotlin">programmer_art</code>), whose structure is similar to a normal resource pack. <p class="paragraph"> The currently supported targets are: </p><ul><li> Programmer Art (<code class="lang-kotlin">programmer_art</code>) </li><li> High Contrast ({@value net.minecraft.client.resource.ClientBuiltinResourcePackProvider#HIGH_CONTRAST_NAME}) </li></ul><p class="paragraph"> Do note that this won't allow for overriding resources that the built-in resource packs already have. </p><p class="paragraph"> In the case of data-packs, Vanilla has a <code class="lang-kotlin">data/minecraft/datapacks</code> directory in which folders for each built-in data-pack is present, using the same paths in mods will allow to extend those data-packs as well. </p><h3 class="">Resource Reloaders</h3> The Resource Loader allows mods to register resource reloaders through <a href="-resource-loader/register-reloader.html">registerReloader</a>, which are triggered when resources are reloaded. Resource reloaders can define a specific ordering through <a href="-resource-loader/add-reloader-ordering.html">addReloaderOrdering</a>, vanilla resource reloader identifiers may be found in <a href="../org.quiltmc.qsl.resource.loader.api.reloader/-resource-reloader-keys/index.html">org.quiltmc.qsl.resource.loader.api.reloader.ResourceReloaderKeys</a>.</div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="624465844%2FClasslikes%2F538063418" anchor-label="GroupResourcePack" id="624465844%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-group-resource-pack/index.html"><span>Group</span><wbr></wbr><span>Resource</span><wbr></wbr><span><span>Pack</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="624465844%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-group-resource-pack/index.html">GroupResourcePack</a></div><div class="brief ">Represents a group resource pack, which holds multiple resource packs as one.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1592500453%2FClasslikes%2F538063418" anchor-label="InMemoryResourcePack" id="-1592500453%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-in-memory-resource-pack/index.html"><span>In</span><wbr></wbr><span>Memory</span><wbr></wbr><span>Resource</span><wbr></wbr><span><span>Pack</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1592500453%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-in-memory-resource-pack/index.html">InMemoryResourcePack</a> : <a href="-mutable-resource-pack/index.html">MutableResourcePack</a></div><div class="brief ">Represents an in-memory resource pack.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-848470739%2FClasslikes%2F538063418" anchor-label="MutableResourcePack" id="-848470739%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-mutable-resource-pack/index.html"><span>Mutable</span><wbr></wbr><span>Resource</span><wbr></wbr><span><span>Pack</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-848470739%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-mutable-resource-pack/index.html">MutableResourcePack</a></div><div class="brief ">Represents a resource pack whose resources are mutable.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2124105702%2FClasslikes%2F538063418" anchor-label="QuiltResourcePack" id="2124105702%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-quilt-resource-pack/index.html"><span>Quilt</span><wbr></wbr><span>Resource</span><wbr></wbr><span><span>Pack</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2124105702%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../org.quiltmc.qsl.base.api.util/-injected-interface/index.html"><span class="token annotation builtin">InjectedInterface</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">interface </span><a href="-quilt-resource-pack/index.html">QuiltResourcePack</a></div><div class="brief ">Represents a resource pack with extended metadata, injected into net.minecraft.resource.pack.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-87393933%2FClasslikes%2F538063418" anchor-label="QuiltResourcePackProfile" id="-87393933%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-quilt-resource-pack-profile/index.html"><span>Quilt</span><wbr></wbr><span>Resource</span><wbr></wbr><span>Pack</span><wbr></wbr><span><span>Profile</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-87393933%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../org.quiltmc.qsl.base.api.util/-injected-interface/index.html"><span class="token annotation builtin">InjectedInterface</span></a><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">interface </span><a href="-quilt-resource-pack-profile/index.html">QuiltResourcePackProfile</a></div><div class="brief ">Represents a resource pack profile with extended metadata, injected into ResourcePackProfile.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-42192377%2FClasslikes%2F538063418" anchor-label="ResourceLoader" id="-42192377%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-resource-loader/index.html"><span>Resource</span><wbr></wbr><span><span>Loader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-42192377%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-resource-loader/index.html">ResourceLoader</a></div><div class="brief ">Represents the resource loader.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1520018%2FClasslikes%2F538063418" anchor-label="ResourceLoaderEvents" id="-1520018%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-resource-loader-events/index.html"><span>Resource</span><wbr></wbr><span>Loader</span><wbr></wbr><span><span>Events</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1520018%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-resource-loader-events/index.html">ResourceLoaderEvents</a></div><div class="brief ">Events related to the resource loader.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-411557519%2FClasslikes%2F538063418" anchor-label="ResourcePackActivationType" id="-411557519%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-resource-pack-activation-type/index.html"><span>Resource</span><wbr></wbr><span>Pack</span><wbr></wbr><span>Activation</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-411557519%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-resource-pack-activation-type/index.html">ResourcePackActivationType</a></div><div class="brief ">Represents the resource pack activation type.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1972849781%2FClasslikes%2F538063418" anchor-label="ResourcePackRegistrationContext" id="-1972849781%2FClasslikes%2F538063418" data-filterable-set=":fatDokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":fatDokkaHtml/main" data-filterable-set=":fatDokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-resource-pack-registration-context/index.html"><span>Resource</span><wbr></wbr><span>Pack</span><wbr></wbr><span>Registration</span><wbr></wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1972849781%2FClasslikes%2F538063418"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":fatDokkaHtml/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-resource-pack-registration-context/index.html">ResourcePackRegistrationContext</a></div><div class="brief ">Represents a context to register resource packs at will invisibly from the user.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
