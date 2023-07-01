@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Gui</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>silk-igui</span>
+            </a>
+    </div>
+    <div>
+1.10.1    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":silk-igui:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="silk-igui::net.silkmc.silk.igui/Gui///PointingToDeclaration//1245817407">
+  <div class="breadcrumbs"><a href="../../../index.html">silk-igui</a><span class="delimiter">/</span><a href="../index.html">net.silkmc.silk.igui</a><span class="delimiter">/</span><span class="current">Gui</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Gui</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">Gui</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>guiType<span class="token operator">: </span><a href="../-gui-type/index.html">GuiType</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>title<span class="token operator">: </span><span data-unresolved-link="net.minecraft.network.chat/Component///PointingToDeclaration/">Component</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pagesByKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../-gui-page/index.html">GuiPage</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pagesByNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../-gui-page/index.html">GuiPage</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>defaultPageKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>eventHandler<span class="token operator">: </span><a href="../-gui-event-handler/index.html">GuiEventHandler</a></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="net.minecraft.world/SimpleContainer///PointingToDeclaration/">SimpleContainer</span>, <span data-unresolved-link="net.minecraft.world/MenuProvider///PointingToDeclaration/">MenuProvider</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1216487724%2FConstructors%2F1245817407" anchor-label="Gui" id="-1216487724%2FConstructors%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-gui.html"><span><span>Gui</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1216487724%2FConstructors%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">guiType<span class="token operator">: </span><a href="../-gui-type/index.html">GuiType</a><span class="token punctuation">, </span></span><span class="parameter ">title<span class="token operator">: </span><span data-unresolved-link="net.minecraft.network.chat/Component///PointingToDeclaration/">Component</span><span class="token punctuation">, </span></span><span class="parameter ">pagesByKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../-gui-page/index.html">GuiPage</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">pagesByNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../-gui-page/index.html">GuiPage</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">defaultPageKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">eventHandler<span class="token operator">: </span><a href="../-gui-event-handler/index.html">GuiEventHandler</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1516133716%2FProperties%2F1245817407" anchor-label="accessor" id="-1516133716%2FProperties%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="accessor.html"><span><span>accessor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1516133716%2FProperties%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="accessor.html">accessor</a><span class="token operator">: </span><a href="../../net.silkmc.silk.igui.mixin/-simple-container-accessor/index.html">SimpleContainerAccessor</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-486445569%2FProperties%2F1245817407" anchor-label="currentPage" id="-486445569%2FProperties%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="current-page.html"><span>current</span><wbr></wbr><span><span>Page</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-486445569%2FProperties%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="current-page.html">currentPage</a><span class="token operator">: </span><a href="../-gui-page/index.html">GuiPage</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1292083620%2FProperties%2F1245817407" anchor-label="defaultPageKey" id="1292083620%2FProperties%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="default-page-key.html"><span>default</span><wbr></wbr><span>Page</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1292083620%2FProperties%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="default-page-key.html">defaultPageKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="640733891%2FProperties%2F1245817407" anchor-label="eventHandler" id="640733891%2FProperties%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="event-handler.html"><span>event</span><wbr></wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="640733891%2FProperties%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="event-handler.html">eventHandler</a><span class="token operator">: </span><a href="../-gui-event-handler/index.html">GuiEventHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-392468430%2FProperties%2F1245817407" anchor-label="guiType" id="-392468430%2FProperties%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gui-type.html"><span>gui</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-392468430%2FProperties%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="gui-type.html">guiType</a><span class="token operator">: </span><a href="../-gui-type/index.html">GuiType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="593095510%2FProperties%2F1245817407" anchor-label="isOffset" id="593095510%2FProperties%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-offset.html"><span>is</span><wbr></wbr><span><span>Offset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="593095510%2FProperties%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="is-offset.html">isOffset</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="48150380%2FProperties%2F1245817407" anchor-label="items" id="48150380%2FProperties%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#48150380%2FProperties%2F1245817407"><span><span>items</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="48150380%2FProperties%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html#48150380%2FProperties%2F1245817407">items</a><span class="token operator">: </span><span data-unresolved-link="net.minecraft.core/NonNullList///PointingToDeclaration/">NonNullList</span><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.minecraft.world.item/ItemStack///PointingToDeclaration/">ItemStack</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1478614801%2FProperties%2F1245817407" anchor-label="pagesByKey" id="-1478614801%2FProperties%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pages-by-key.html"><span>pages</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1478614801%2FProperties%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="pages-by-key.html">pagesByKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../-gui-page/index.html">GuiPage</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1216909379%2FProperties%2F1245817407" anchor-label="pagesByNumber" id="1216909379%2FProperties%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pages-by-number.html"><span>pages</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Number</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1216909379%2FProperties%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="pages-by-number.html">pagesByNumber</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../-gui-page/index.html">GuiPage</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1528649935%2FProperties%2F1245817407" anchor-label="title" id="1528649935%2FProperties%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title.html"><span><span>title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1528649935%2FProperties%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="title.html">title</a><span class="token operator">: </span><span data-unresolved-link="net.minecraft.network.chat/Component///PointingToDeclaration/">Component</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-795507335%2FProperties%2F1245817407" anchor-label="views" id="-795507335%2FProperties%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="views.html"><span><span>views</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-795507335%2FProperties%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="views.html">views</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html">HashMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.minecraft.world.entity.player/Player///PointingToDeclaration/">Player</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="../-gui-screen-handler/index.html">GuiScreenHandler</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1954599920%2FFunctions%2F1245817407" anchor-label="addItem" id="1954599920%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1954599920%2FFunctions%2F1245817407"><span>add</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1954599920%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1954599920%2FFunctions%2F1245817407"><span class="token function">addItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">itemStack<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.item/ItemStack///PointingToDeclaration/">ItemStack</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.item/ItemStack///PointingToDeclaration/">ItemStack</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1191083876%2FFunctions%2F1245817407" anchor-label="addListener" id="1191083876%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1191083876%2FFunctions%2F1245817407"><span>add</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1191083876%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1191083876%2FFunctions%2F1245817407"><span class="token function">addListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">containerListener<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world/ContainerListener///PointingToDeclaration/">ContainerListener</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1060598178%2FFunctions%2F1245817407" anchor-label="canAddItem" id="1060598178%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1060598178%2FFunctions%2F1245817407"><span>can</span><wbr></wbr><span>Add</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1060598178%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1060598178%2FFunctions%2F1245817407"><span class="token function">canAddItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">itemStack<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.item/ItemStack///PointingToDeclaration/">ItemStack</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="123781315%2FFunctions%2F1245817407" anchor-label="canPlaceItem" id="123781315%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#123781315%2FFunctions%2F1245817407"><span>can</span><wbr></wbr><span>Place</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="123781315%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#123781315%2FFunctions%2F1245817407"><span class="token function">canPlaceItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">i<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">itemStack<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.item/ItemStack///PointingToDeclaration/">ItemStack</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="146511577%2FFunctions%2F1245817407" anchor-label="canTakeItem" id="146511577%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#146511577%2FFunctions%2F1245817407"><span>can</span><wbr></wbr><span>Take</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="146511577%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#146511577%2FFunctions%2F1245817407"><span class="token function">canTakeItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">container<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world/Container///PointingToDeclaration/">Container</span><span class="token punctuation">, </span></span><span class="parameter ">i<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">itemStack<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.item/ItemStack///PointingToDeclaration/">ItemStack</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-371478938%2FFunctions%2F1245817407" anchor-label="changePage" id="-371478938%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../change-page.html"><span>change</span><wbr></wbr><span><span>Page</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-371478938%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">Gui</a><span class="token punctuation">.</span><a href="../change-page.html"><span class="token function">changePage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fromPage<span class="token operator">: </span><a href="../-gui-page/index.html">GuiPage</a><span class="token punctuation">, </span></span><span class="parameter ">toPage<span class="token operator">: </span><a href="../-gui-page/index.html">GuiPage</a><span class="token punctuation">, </span></span><span class="parameter ">overrideEffect<span class="token operator">: </span><a href="../-gui-page/-change-effect/index.html">GuiPage.ChangeEffect</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="kotlinx.coroutines/Job///PointingToDeclaration/">Job</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1387319682%2FFunctions%2F1245817407" anchor-label="clearContent" id="1387319682%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1387319682%2FFunctions%2F1245817407"><span>clear</span><wbr></wbr><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1387319682%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#1387319682%2FFunctions%2F1245817407"><span class="token function">clearContent</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2073277943%2FFunctions%2F1245817407" anchor-label="closeForViewers" id="2073277943%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="close-for-viewers.html"><span>close</span><wbr></wbr><span>For</span><wbr></wbr><span><span>Viewers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2073277943%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="close-for-viewers.html"><span class="token function">closeForViewers</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Closes this gui for all players viewing it.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1222068586%2FFunctions%2F1245817407" anchor-label="countItem" id="1222068586%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1222068586%2FFunctions%2F1245817407"><span>count</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1222068586%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1222068586%2FFunctions%2F1245817407"><span class="token function">countItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">item<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.item/Item///PointingToDeclaration/">Item</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1308108767%2FFunctions%2F1245817407" anchor-label="createMenu" id="-1308108767%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-menu.html"><span>create</span><wbr></wbr><span><span>Menu</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1308108767%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="create-menu.html"><span class="token function">createMenu</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">syncId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">inventory<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.entity.player/Inventory///PointingToDeclaration/">Inventory</span><span class="token punctuation">, </span></span><span class="parameter ">player<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.entity.player/Player///PointingToDeclaration/">Player</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-gui-screen-handler/index.html">GuiScreenHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1621631890%2FFunctions%2F1245817407" anchor-label="createTag" id="-1621631890%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1621631890%2FFunctions%2F1245817407"><span>create</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1621631890%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1621631890%2FFunctions%2F1245817407"><span class="token function">createTag</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.minecraft.nbt/ListTag///PointingToDeclaration/">ListTag</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1250668131%2FFunctions%2F1245817407" anchor-label="fillStackedContents" id="1250668131%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1250668131%2FFunctions%2F1245817407"><span>fill</span><wbr></wbr><span>Stacked</span><wbr></wbr><span><span>Contents</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1250668131%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#1250668131%2FFunctions%2F1245817407"><span class="token function">fillStackedContents</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stackedContents<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.entity.player/StackedContents///PointingToDeclaration/">StackedContents</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1309897174%2FFunctions%2F1245817407" anchor-label="fromTag" id="-1309897174%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1309897174%2FFunctions%2F1245817407"><span>from</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1309897174%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1309897174%2FFunctions%2F1245817407"><span class="token function">fromTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listTag<span class="token operator">: </span><span data-unresolved-link="net.minecraft.nbt/ListTag///PointingToDeclaration/">ListTag</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="6754818%2FFunctions%2F1245817407" anchor-label="getContainerSize" id="6754818%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#6754818%2FFunctions%2F1245817407"><span>get</span><wbr></wbr><span>Container</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="6754818%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#6754818%2FFunctions%2F1245817407"><span class="token function">getContainerSize</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="86201660%2FFunctions%2F1245817407" anchor-label="getDisplayName" id="86201660%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-display-name.html"><span>get</span><wbr></wbr><span>Display</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="86201660%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-display-name.html"><span class="token function">getDisplayName</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.minecraft.network.chat/Component///PointingToDeclaration/">Component</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-899722783%2FFunctions%2F1245817407" anchor-label="getItem" id="-899722783%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-899722783%2FFunctions%2F1245817407"><span>get</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-899722783%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-899722783%2FFunctions%2F1245817407"><span class="token function">getItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">i<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.item/ItemStack///PointingToDeclaration/">ItemStack</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1853114721%2FFunctions%2F1245817407" anchor-label="getMaxStackSize" id="-1853114721%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1853114721%2FFunctions%2F1245817407"><span>get</span><wbr></wbr><span>Max</span><wbr></wbr><span>Stack</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1853114721%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1853114721%2FFunctions%2F1245817407"><span class="token function">getMaxStackSize</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="364949398%2FFunctions%2F1245817407" anchor-label="hasAnyMatching" id="364949398%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#364949398%2FFunctions%2F1245817407"><span>has</span><wbr></wbr><span>Any</span><wbr></wbr><span><span>Matching</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="364949398%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#364949398%2FFunctions%2F1245817407"><span class="token function">hasAnyMatching</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">predicate<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html">Predicate</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.minecraft.world.item/ItemStack///PointingToDeclaration/">ItemStack</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1596165121%2FFunctions%2F1245817407" anchor-label="hasAnyOf" id="1596165121%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1596165121%2FFunctions%2F1245817407"><span>has</span><wbr></wbr><span>Any</span><wbr></wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1596165121%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1596165121%2FFunctions%2F1245817407"><span class="token function">hasAnyOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">set<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html">MutableSet</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.minecraft.world.item/Item///PointingToDeclaration/">Item</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1192552823%2FFunctions%2F1245817407" anchor-label="isEmpty" id="-1192552823%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1192552823%2FFunctions%2F1245817407"><span>is</span><wbr></wbr><span><span>Empty</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1192552823%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-1192552823%2FFunctions%2F1245817407"><span class="token function">isEmpty</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-70657047%2FFunctions%2F1245817407" anchor-label="loadPage" id="-70657047%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="load-page.html"><span>load</span><wbr></wbr><span><span>Page</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-70657047%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="load-page.html"><span class="token function">loadPage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">page<span class="token operator">: </span><a href="../-gui-page/index.html">GuiPage</a><span class="token punctuation">, </span></span><span class="parameter ">offsetHorizontally<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">offsetVertically<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Loads the specified page with the specified offset.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="891220920%2FFunctions%2F1245817407" anchor-label="reloadCurrentPage" id="891220920%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reload-current-page.html"><span>reload</span><wbr></wbr><span>Current</span><wbr></wbr><span><span>Page</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="891220920%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="reload-current-page.html"><span class="token function">reloadCurrentPage</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Reloads the current page.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="28212043%2FFunctions%2F1245817407" anchor-label="removeAllItems" id="28212043%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#28212043%2FFunctions%2F1245817407"><span>remove</span><wbr></wbr><span>All</span><wbr></wbr><span><span>Items</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="28212043%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#28212043%2FFunctions%2F1245817407"><span class="token function">removeAllItems</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.minecraft.world.item/ItemStack///PointingToDeclaration/">ItemStack</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1858076040%2FFunctions%2F1245817407" anchor-label="removeItem" id="1858076040%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1858076040%2FFunctions%2F1245817407"><span>remove</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1858076040%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#1858076040%2FFunctions%2F1245817407"><span class="token function">removeItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">i<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">j<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.item/ItemStack///PointingToDeclaration/">ItemStack</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1205910421%2FFunctions%2F1245817407" anchor-label="removeItemNoUpdate" id="-1205910421%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1205910421%2FFunctions%2F1245817407"><span>remove</span><wbr></wbr><span>Item</span><wbr></wbr><span>No</span><wbr></wbr><span><span>Update</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1205910421%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-1205910421%2FFunctions%2F1245817407"><span class="token function">removeItemNoUpdate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">i<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.item/ItemStack///PointingToDeclaration/">ItemStack</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="384456664%2FFunctions%2F1245817407" anchor-label="removeItemType" id="384456664%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#384456664%2FFunctions%2F1245817407"><span>remove</span><wbr></wbr><span>Item</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="384456664%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#384456664%2FFunctions%2F1245817407"><span class="token function">removeItemType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">item<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.item/Item///PointingToDeclaration/">Item</span><span class="token punctuation">, </span></span><span class="parameter ">i<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.item/ItemStack///PointingToDeclaration/">ItemStack</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-623788795%2FFunctions%2F1245817407" anchor-label="removeListener" id="-623788795%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-623788795%2FFunctions%2F1245817407"><span>remove</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-623788795%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-623788795%2FFunctions%2F1245817407"><span class="token function">removeListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">containerListener<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world/ContainerListener///PointingToDeclaration/">ContainerListener</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1326205444%2FFunctions%2F1245817407" anchor-label="setChanged" id="-1326205444%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1326205444%2FFunctions%2F1245817407"><span>set</span><wbr></wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1326205444%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-1326205444%2FFunctions%2F1245817407"><span class="token function">setChanged</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-579544414%2FFunctions%2F1245817407" anchor-label="setItem" id="-579544414%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-579544414%2FFunctions%2F1245817407"><span>set</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-579544414%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-579544414%2FFunctions%2F1245817407"><span class="token function">setItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">i<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">itemStack<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.item/ItemStack///PointingToDeclaration/">ItemStack</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1443003288%2FFunctions%2F1245817407" anchor-label="shouldCloseCurrentScreen" id="-1443003288%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1443003288%2FFunctions%2F1245817407"><span>should</span><wbr></wbr><span>Close</span><wbr></wbr><span>Current</span><wbr></wbr><span><span>Screen</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1443003288%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1443003288%2FFunctions%2F1245817407"><span class="token function">shouldCloseCurrentScreen</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="857431133%2FFunctions%2F1245817407" anchor-label="startOpen" id="857431133%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#857431133%2FFunctions%2F1245817407"><span>start</span><wbr></wbr><span><span>Open</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="857431133%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#857431133%2FFunctions%2F1245817407"><span class="token function">startOpen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">player<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.entity.player/Player///PointingToDeclaration/">Player</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="27872649%2FFunctions%2F1245817407" anchor-label="stillValid" id="27872649%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#27872649%2FFunctions%2F1245817407"><span>still</span><wbr></wbr><span><span>Valid</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="27872649%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#27872649%2FFunctions%2F1245817407"><span class="token function">stillValid</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">player<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.entity.player/Player///PointingToDeclaration/">Player</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-513695050%2FFunctions%2F1245817407" anchor-label="stopOpen" id="-513695050%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop-open.html"><span>stop</span><wbr></wbr><span><span>Open</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-513695050%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="stop-open.html"><span class="token function">stopOpen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">player<span class="token operator">: </span><span data-unresolved-link="net.minecraft.world.entity.player/Player///PointingToDeclaration/">Player</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1614580478%2FFunctions%2F1245817407" anchor-label="toString" id="-1614580478%2FFunctions%2F1245817407" data-filterable-set=":silk-igui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-igui:dokkaHtml/main" data-filterable-set=":silk-igui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1614580478%2FFunctions%2F1245817407"><span>to</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1614580478%2FFunctions%2F1245817407"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-igui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-1614580478%2FFunctions%2F1245817407"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

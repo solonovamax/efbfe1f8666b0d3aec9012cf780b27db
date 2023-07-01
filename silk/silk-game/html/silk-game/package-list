@@ -1,0 +1,69 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:net.silkmc.silk.game.cooldown////PointingToDeclaration/silk-game/net.silkmc.silk.game.cooldown/index.html
+$dokka.location:net.silkmc.silk.game.cooldown/Cooldown///PointingToDeclaration/silk-game/net.silkmc.silk.game.cooldown/-cooldown/index.html
+$dokka.location:net.silkmc.silk.game.cooldown/Cooldown/Cooldown/#kotlin.Long/PointingToDeclaration/silk-game/net.silkmc.silk.game.cooldown/-cooldown/-cooldown.html
+$dokka.location:net.silkmc.silk.game.cooldown/Cooldown/Cooldown/#net.minecraft.resources.ResourceLocation#kotlin.Long/PointingToDeclaration/silk-game/net.silkmc.silk.game.cooldown/-cooldown/-cooldown.html
+$dokka.location:net.silkmc.silk.game.cooldown/Cooldown/applyCooldown/#net.minecraft.world.entity.Entity#kotlin.Long/PointingToDeclaration/silk-game/net.silkmc.silk.game.cooldown/-cooldown/apply-cooldown.html
+$dokka.location:net.silkmc.silk.game.cooldown/Cooldown/defaultLength/#/PointingToDeclaration/silk-game/net.silkmc.silk.game.cooldown/-cooldown/default-length.html
+$dokka.location:net.silkmc.silk.game.cooldown/Cooldown/hasCooldown/#net.minecraft.world.entity.Entity/PointingToDeclaration/silk-game/net.silkmc.silk.game.cooldown/-cooldown/has-cooldown.html
+$dokka.location:net.silkmc.silk.game.cooldown/Cooldown/key/#/PointingToDeclaration/silk-game/net.silkmc.silk.game.cooldown/-cooldown/key.html
+$dokka.location:net.silkmc.silk.game.cooldown/Cooldown/withCooldown/#net.minecraft.world.entity.Entity#kotlin.Long#kotlin.Function0[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/silk-game/net.silkmc.silk.game.cooldown/-cooldown/with-cooldown.html
+$dokka.location:net.silkmc.silk.game.sideboard.internal////PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard.internal/index.html
+$dokka.location:net.silkmc.silk.game.sideboard.internal/SideboardScoreboard.Companion///PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard.internal/-sideboard-scoreboard/-companion/index.html
+$dokka.location:net.silkmc.silk.game.sideboard.internal/SideboardScoreboard.Line///PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard.internal/-sideboard-scoreboard/-line/index.html
+$dokka.location:net.silkmc.silk.game.sideboard.internal/SideboardScoreboard.Line/Line/#kotlin.Int/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard.internal/-sideboard-scoreboard/-line/-line.html
+$dokka.location:net.silkmc.silk.game.sideboard.internal/SideboardScoreboard.Line/createInitPackets/#kotlin.Int/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard.internal/-sideboard-scoreboard/-line/create-init-packets.html
+$dokka.location:net.silkmc.silk.game.sideboard.internal/SideboardScoreboard.Line/createRemovePackets/#/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard.internal/-sideboard-scoreboard/-line/create-remove-packets.html
+$dokka.location:net.silkmc.silk.game.sideboard.internal/SideboardScoreboard.Line/setContent/#net.minecraft.network.chat.Component/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard.internal/-sideboard-scoreboard/-line/set-content.html
+$dokka.location:net.silkmc.silk.game.sideboard.internal/SideboardScoreboard///PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard.internal/-sideboard-scoreboard/index.html
+$dokka.location:net.silkmc.silk.game.sideboard.internal/SideboardScoreboard/SideboardScoreboard/#kotlin.String#net.minecraft.network.chat.Component/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard.internal/-sideboard-scoreboard/-sideboard-scoreboard.html
+$dokka.location:net.silkmc.silk.game.sideboard.internal/SideboardScoreboard/addLine/#/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard.internal/-sideboard-scoreboard/add-line.html
+$dokka.location:net.silkmc.silk.game.sideboard.internal/SideboardScoreboard/displayToPlayer/#net.minecraft.server.level.ServerPlayer/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard.internal/-sideboard-scoreboard/display-to-player.html
+$dokka.location:net.silkmc.silk.game.sideboard.internal/SideboardScoreboard/hideFromPlayer/#net.minecraft.server.level.ServerPlayer#kotlin.Boolean/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard.internal/-sideboard-scoreboard/hide-from-player.html
+$dokka.location:net.silkmc.silk.game.sideboard////PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/index.html
+$dokka.location:net.silkmc.silk.game.sideboard//showSideboard/net.minecraft.server.level.ServerPlayer#net.silkmc.silk.game.sideboard.Sideboard/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/show-sideboard.html
+$dokka.location:net.silkmc.silk.game.sideboard//sideboard/#net.minecraft.network.chat.Component#kotlin.String#kotlin.Function1[net.silkmc.silk.game.sideboard.SideboardBuilder,kotlin.Unit]/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/sideboard.html
+$dokka.location:net.silkmc.silk.game.sideboard/ChangingSideboardLine///PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-changing-sideboard-line/index.html
+$dokka.location:net.silkmc.silk.game.sideboard/ChangingSideboardLine/ChangingSideboardLine/#kotlinx.coroutines.flow.Flow[net.minecraft.network.chat.Component]/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-changing-sideboard-line/-changing-sideboard-line.html
+$dokka.location:net.silkmc.silk.game.sideboard/ChangingSideboardLine/textFlow/#/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-changing-sideboard-line/text-flow.html
+$dokka.location:net.silkmc.silk.game.sideboard/Sideboard///PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard/index.html
+$dokka.location:net.silkmc.silk.game.sideboard/Sideboard/Sideboard/#kotlin.String#net.minecraft.network.chat.Component#kotlin.collections.List[net.silkmc.silk.game.sideboard.SideboardLine]/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard/-sideboard.html
+$dokka.location:net.silkmc.silk.game.sideboard/Sideboard/displayToPlayer/#net.minecraft.server.level.ServerPlayer/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard/display-to-player.html
+$dokka.location:net.silkmc.silk.game.sideboard/Sideboard/hideFromPlayer/#net.minecraft.server.level.ServerPlayer/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard/hide-from-player.html
+$dokka.location:net.silkmc.silk.game.sideboard/Sideboard/scoreboard/#/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard/scoreboard.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardBuilder///PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-builder/index.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardBuilder/SideboardBuilder/#/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-builder/-sideboard-builder.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardBuilder/emitLiteralText/kotlinx.coroutines.flow.FlowCollector[net.minecraft.network.chat.Component]#kotlin.String#kotlin.Function1[net.silkmc.silk.core.text.LiteralTextBuilder,kotlin.Unit]/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-builder/emit-literal-text.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardBuilder/emptyLine/#/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-builder/empty-line.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardBuilder/line/#kotlin.Function0[net.minecraft.network.chat.Component]/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-builder/line.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardBuilder/line/#kotlinx.coroutines.flow.Flow[net.minecraft.network.chat.Component]/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-builder/line.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardBuilder/line/#net.minecraft.network.chat.Component/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-builder/line.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardBuilder/line/#net.silkmc.silk.game.sideboard.SideboardLine/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-builder/line.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardBuilder/lineChanging/#kotlin.coroutines.SuspendFunction1[kotlinx.coroutines.flow.FlowCollector[net.minecraft.network.chat.Component],kotlin.Unit]/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-builder/line-changing.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardBuilder/lineChangingPeriodically/#kotlin.Long#kotlin.coroutines.SuspendFunction0[net.minecraft.network.chat.Component]/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-builder/line-changing-periodically.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardBuilder/literalLine/#kotlin.String#kotlin.Function1[net.silkmc.silk.core.text.LiteralTextBuilder,kotlin.Unit]/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-builder/literal-line.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardBuilder/updatingLine/#kotlin.time.Duration#kotlin.coroutines.SuspendFunction0[net.minecraft.network.chat.Component]/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-builder/updating-line.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine.Changing///PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/-changing/index.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine.Changing/Changing/#kotlinx.coroutines.flow.Flow[net.minecraft.network.chat.Component]/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/-changing/-changing.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine.Changing/textFlow/#/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/-changing/text-flow.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine.Static///PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/-static/index.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine.Static/Static/#net.minecraft.network.chat.Component/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/-static/-static.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine.Static/textFlow/#/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/-static/text-flow.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine.Updatable///PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/-updatable/index.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine.Updatable/Updatable/#net.minecraft.network.chat.Component?/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/-updatable/-updatable.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine.Updatable/launchUpdate/#net.minecraft.network.chat.Component/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/-updatable/launch-update.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine.Updatable/textFlow/#/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/-updatable/text-flow.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine.Updatable/update/#net.minecraft.network.chat.Component/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/-updatable/update.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine.UpdatingPeriodically///PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/-updating-periodically/index.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine.UpdatingPeriodically/UpdatingPeriodically/#kotlin.time.Duration#kotlin.coroutines.SuspendFunction0[net.minecraft.network.chat.Component]/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/-updating-periodically/-updating-periodically.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine.UpdatingPeriodically/textFlow/#/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/-updating-periodically/text-flow.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine///PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/index.html
+$dokka.location:net.silkmc.silk.game.sideboard/SideboardLine/textFlow/#/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-sideboard-line/text-flow.html
+$dokka.location:net.silkmc.silk.game.sideboard/SimpleSideboardLine///PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-simple-sideboard-line/index.html
+$dokka.location:net.silkmc.silk.game.sideboard/SimpleSideboardLine/SimpleSideboardLine/#net.minecraft.network.chat.Component/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-simple-sideboard-line/-simple-sideboard-line.html
+$dokka.location:net.silkmc.silk.game.sideboard/SimpleSideboardLine/textFlow/#/PointingToDeclaration/silk-game/net.silkmc.silk.game.sideboard/-simple-sideboard-line/text-flow.html
+net.silkmc.silk.game.cooldown
+net.silkmc.silk.game.sideboard
+net.silkmc.silk.game.sideboard.internal
+

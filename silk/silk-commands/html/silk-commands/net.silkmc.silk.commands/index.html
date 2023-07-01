@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>net.silkmc.silk.commands</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../index.html">
+                    <span>silk-commands</span>
+            </a>
+    </div>
+    <div>
+1.10.1    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":silk-commands:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="silk-commands::net.silkmc.silk.commands////PointingToDeclaration//672343445">
+  <div class="breadcrumbs"><a href="../../index.html">silk-commands</a><span class="delimiter">/</span><span class="current">net.silkmc.silk.commands</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="554887780%2FClasslikes%2F672343445" anchor-label="ArgumentCommandBuilder" id="554887780%2FClasslikes%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-argument-command-builder/index.html"><span>Argument</span><wbr></wbr><span>Command</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="554887780%2FClasslikes%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-argument-command-builder/index.html">ArgumentCommandBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-argument-command-builder/index.html">Source</a><span class="token operator"> : </span><span data-unresolved-link="net.minecraft.commands/SharedSuggestionProvider///PointingToDeclaration/">SharedSuggestionProvider</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="-argument-command-builder/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">typeProvider<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><span data-unresolved-link="net.minecraft.commands/CommandBuildContext///PointingToDeclaration/">CommandBuildContext</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><span data-unresolved-link="com.mojang.brigadier.arguments/ArgumentType///PointingToDeclaration/">ArgumentType</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-argument-command-builder/index.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="-command-builder/index.html">CommandBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-argument-command-builder/index.html">Source</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="com.mojang.brigadier.builder/RequiredArgumentBuilder///PointingToDeclaration/">RequiredArgumentBuilder</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-argument-command-builder/index.html">Source</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-argument-command-builder/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="com.mojang.brigadier.tree/ArgumentCommandNode///PointingToDeclaration/">ArgumentCommandNode</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-argument-command-builder/index.html">Source</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-argument-command-builder/index.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1398578386%2FClasslikes%2F672343445" anchor-label="ArgumentResolver" id="-1398578386%2FClasslikes%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1398578386%2FClasslikes%2F672343445"><span>Argument</span><wbr></wbr><span><span>Resolver</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1398578386%2FClasslikes%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="index.html#-1398578386%2FClasslikes%2F672343445">ArgumentResolver</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html#-1398578386%2FClasslikes%2F672343445">S</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html#-1398578386%2FClasslikes%2F672343445">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><span class="token keyword"></span><span data-unresolved-link="com.mojang.brigadier.context/CommandContext///PointingToDeclaration/">CommandContext</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html#-1398578386%2FClasslikes%2F672343445">S</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="index.html#-1398578386%2FClasslikes%2F672343445">T</a></div><div class="brief "><p class="paragraph">An argument resolver extracts the argument value out of the current <span data-unresolved-link="com.mojang.brigadier.context/CommandContext///PointingToDeclaration/">CommandContext</span>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-721594437%2FClasslikes%2F672343445" anchor-label="BrigadierBuilder" id="-721594437%2FClasslikes%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-721594437%2FClasslikes%2F672343445"><span>Brigadier</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-721594437%2FClasslikes%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="index.html#-721594437%2FClasslikes%2F672343445">BrigadierBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html#-721594437%2FClasslikes%2F672343445">Builder</a><span class="token operator">&gt;</span><span class="token operator"> = </span><span class="token keyword"></span><a href="index.html#-721594437%2FClasslikes%2F672343445">Builder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token keyword"></span>context<span class="token operator">: </span><span data-unresolved-link="net.minecraft.commands/CommandBuildContext///PointingToDeclaration/">CommandBuildContext</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1347577412%2FClasslikes%2F672343445" anchor-label="ClientCommandSourceStack" id="1347577412%2FClasslikes%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1347577412%2FClasslikes%2F672343445"><span>Client</span><wbr></wbr><span>Command</span><wbr></wbr><span>Source</span><wbr></wbr><span><span>Stack</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1347577412%2FClasslikes%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="index.html#1347577412%2FClasslikes%2F672343445">ClientCommandSourceStack</a><span class="token operator"> = </span><span data-unresolved-link="net.minecraft.client.multiplayer/ClientSuggestionProvider///PointingToDeclaration/">ClientSuggestionProvider</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1252367329%2FClasslikes%2F672343445" anchor-label="CommandBuilder" id="1252367329%2FClasslikes%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-command-builder/index.html"><span>Command</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1252367329%2FClasslikes%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-command-builder/index.html">CommandBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-command-builder/index.html">Source</a><span class="token operator"> : </span><span data-unresolved-link="net.minecraft.commands/SharedSuggestionProvider///PointingToDeclaration/">SharedSuggestionProvider</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="-command-builder/index.html">Builder</a><span class="token operator"> : </span><span data-unresolved-link="com.mojang.brigadier.builder/ArgumentBuilder///PointingToDeclaration/">ArgumentBuilder</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-command-builder/index.html">Source</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="-command-builder/index.html">Builder</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="-command-builder/index.html">Node</a><span class="token operator"> : </span><span data-unresolved-link="com.mojang.brigadier.tree/CommandNode///PointingToDeclaration/">CommandNode</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-command-builder/index.html">Source</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1402108210%2FClasslikes%2F672343445" anchor-label="LiteralCommandBuilder" id="1402108210%2FClasslikes%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-literal-command-builder/index.html"><span>Literal</span><wbr></wbr><span>Command</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1402108210%2FClasslikes%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-literal-command-builder/index.html">LiteralCommandBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-literal-command-builder/index.html">Source</a><span class="token operator"> : </span><span data-unresolved-link="net.minecraft.commands/SharedSuggestionProvider///PointingToDeclaration/">SharedSuggestionProvider</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-command-builder/index.html">CommandBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-literal-command-builder/index.html">Source</a><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="com.mojang.brigadier.builder/LiteralArgumentBuilder///PointingToDeclaration/">LiteralArgumentBuilder</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-literal-command-builder/index.html">Source</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span class="token keyword"></span><span data-unresolved-link="com.mojang.brigadier.tree/LiteralCommandNode///PointingToDeclaration/">LiteralCommandNode</span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-literal-command-builder/index.html">Source</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="909613916%2FClasslikes%2F672343445" anchor-label="PermissionLevel" id="909613916%2FClasslikes%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-permission-level/index.html"><span>Permission</span><wbr></wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="909613916%2FClasslikes%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-permission-level/index.html">PermissionLevel</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-permission-level/index.html">PermissionLevel</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">An enum containing known permission levels. Information taken from <a href="https://minecraft.fandom.com/wiki/Permission_level#Java_Edition">the Minecraft wiki</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1820280316%2FClasslikes%2F672343445" anchor-label="RegistrableCommand" id="1820280316%2FClasslikes%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-registrable-command/index.html"><span>Registrable</span><wbr></wbr><span><span>Command</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1820280316%2FClasslikes%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-registrable-command/index.html">RegistrableCommand</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-registrable-command/index.html">Source</a><span class="token operator"> : </span><span data-unresolved-link="net.minecraft.commands/SharedSuggestionProvider///PointingToDeclaration/">SharedSuggestionProvider</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>commandBuilder<span class="token operator">: </span><a href="-literal-command-builder/index.html">LiteralCommandBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-registrable-command/index.html">Source</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">A wrapper around mutable command builders, which makes sure they don't get mutated anymore and can be registered.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1107299365%2FClasslikes%2F672343445" anchor-label="SimpleArgumentBuilder" id="1107299365%2FClasslikes%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1107299365%2FClasslikes%2F672343445"><span>Simple</span><wbr></wbr><span>Argument</span><wbr></wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1107299365%2FClasslikes%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="index.html#1107299365%2FClasslikes%2F672343445">SimpleArgumentBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html#1107299365%2FClasslikes%2F672343445">Source</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html#1107299365%2FClasslikes%2F672343445">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><span class="token keyword"></span><a href="-argument-command-builder/index.html">ArgumentCommandBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html#1107299365%2FClasslikes%2F672343445">Source</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html#1107299365%2FClasslikes%2F672343445">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token keyword"></span>argument<span class="token operator">: </span><a href="index.html#-1398578386%2FClasslikes%2F672343445">ArgumentResolver</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html#1107299365%2FClasslikes%2F672343445">Source</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="index.html#1107299365%2FClasslikes%2F672343445">T</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></div><div class="brief "><p class="paragraph">The simple argument builder is a variant of an <a href="-argument-command-builder/index.html">ArgumentCommandBuilder</a> lambda function that supports <a href="index.html#-1398578386%2FClasslikes%2F672343445">ArgumentResolver</a> (passed as <code class="lang-kotlin">it</code>).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="EXTENSION_PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="2093377361%2FProperties%2F672343445" anchor-label="connection" id="2093377361%2FProperties%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="connection.html"><span><span>connection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2093377361%2FProperties%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html#1347577412%2FClasslikes%2F672343445">ClientCommandSourceStack</a><span class="token punctuation">.</span><a href="connection.html">connection</a><span class="token operator">: </span><span data-unresolved-link="net.minecraft.client.multiplayer/ClientPacketListener///PointingToDeclaration/">ClientPacketListener</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1544784263%2FProperties%2F672343445" anchor-label="level" id="-1544784263%2FProperties%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="level.html"><span><span>level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1544784263%2FProperties%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html#1347577412%2FClasslikes%2F672343445">ClientCommandSourceStack</a><span class="token punctuation">.</span><a href="level.html">level</a><span class="token operator">: </span><span data-unresolved-link="net.minecraft.client.multiplayer/ClientLevel///PointingToDeclaration/">ClientLevel</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-640277534%2FProperties%2F672343445" anchor-label="minecraft" id="-640277534%2FProperties%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="minecraft.html"><span><span>minecraft</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-640277534%2FProperties%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html#1347577412%2FClasslikes%2F672343445">ClientCommandSourceStack</a><span class="token punctuation">.</span><a href="minecraft.html">minecraft</a><span class="token operator">: </span><span data-unresolved-link="net.minecraft.client/Minecraft///PointingToDeclaration/">Minecraft</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1099296748%2FProperties%2F672343445" anchor-label="player" id="-1099296748%2FProperties%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="player.html"><span><span>player</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1099296748%2FProperties%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html#1347577412%2FClasslikes%2F672343445">ClientCommandSourceStack</a><span class="token punctuation">.</span><a href="player.html">player</a><span class="token operator">: </span><span data-unresolved-link="net.minecraft.client.player/LocalPlayer///PointingToDeclaration/">LocalPlayer</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="219619963%2FFunctions%2F672343445" anchor-label="clientCommand" id="219619963%2FFunctions%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="client-command.html"><span>client</span><wbr></wbr><span><span>Command</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="219619963%2FFunctions%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="net.fabricmc.api/Environment///PointingToDeclaration/"><span class="token annotation builtin">Environment</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span data-unresolved-link="net.fabricmc.api/EnvType.CLIENT///PointingToDeclaration/">EnvType.CLIENT</span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="client-command.html"><span class="token function">clientCommand</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">register<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">builder<span class="token operator">: </span><span class="token keyword"></span><a href="-literal-command-builder/index.html">LiteralCommandBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html#1347577412%2FClasslikes%2F672343445">ClientCommandSourceStack</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-registrable-command/index.html">RegistrableCommand</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html#1347577412%2FClasslikes%2F672343445">ClientCommandSourceStack</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Creates a new client command. Opens a <a href="-literal-command-builder/index.html">LiteralCommandBuilder</a>. This command will work on the client, even if the player is connected to a third party server.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="258157951%2FFunctions%2F672343445" anchor-label="command" id="258157951%2FFunctions%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="command.html"><span><span>command</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="258157951%2FFunctions%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="command.html"><span class="token function">command</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">register<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">builder<span class="token operator">: </span><span class="token keyword"></span><a href="-literal-command-builder/index.html">LiteralCommandBuilder</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.minecraft.commands/CommandSourceStack///PointingToDeclaration/">CommandSourceStack</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-registrable-command/index.html">RegistrableCommand</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="net.minecraft.commands/CommandSourceStack///PointingToDeclaration/">CommandSourceStack</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Creates a new command. Opens a <a href="-literal-command-builder/index.html">LiteralCommandBuilder</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2082122914%2FFunctions%2F672343445" anchor-label="sendFailure" id="-2082122914%2FFunctions%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-failure.html"><span>send</span><wbr></wbr><span><span>Failure</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2082122914%2FFunctions%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1347577412%2FClasslikes%2F672343445">ClientCommandSourceStack</a><span class="token punctuation">.</span><a href="send-failure.html"><span class="token function">sendFailure</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><span data-unresolved-link="net.minecraft.network.chat/Component///PointingToDeclaration/">Component</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1841699561%2FFunctions%2F672343445" anchor-label="sendSuccess" id="-1841699561%2FFunctions%2F672343445" data-filterable-set=":silk-commands:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":silk-commands:dokkaHtml/main" data-filterable-set=":silk-commands:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-success.html"><span>send</span><wbr></wbr><span><span>Success</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1841699561%2FFunctions%2F672343445"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":silk-commands:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1347577412%2FClasslikes%2F672343445">ClientCommandSourceStack</a><span class="token punctuation">.</span><a href="send-success.html"><span class="token function">sendSuccess</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><span data-unresolved-link="net.minecraft.network.chat/Component///PointingToDeclaration/">Component</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

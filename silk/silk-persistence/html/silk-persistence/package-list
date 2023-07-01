@@ -1,0 +1,62 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:net.silkmc.silk.persistence.internal////PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.internal/index.html
+$dokka.location:net.silkmc.silk.persistence.internal/CompoundPersistentState.Companion///PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.internal/-compound-persistent-state/-companion/index.html
+$dokka.location:net.silkmc.silk.persistence.internal/CompoundPersistentState.Companion/load/#net.minecraft.nbt.CompoundTag#net.silkmc.silk.persistence.PersistentCompound/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.internal/-compound-persistent-state/-companion/load.html
+$dokka.location:net.silkmc.silk.persistence.internal/CompoundPersistentState///PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.internal/-compound-persistent-state/index.html
+$dokka.location:net.silkmc.silk.persistence.internal/CompoundPersistentState/CompoundPersistentState/#net.silkmc.silk.persistence.PersistentCompound/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.internal/-compound-persistent-state/-compound-persistent-state.html
+$dokka.location:net.silkmc.silk.persistence.internal/CompoundPersistentState/save/#net.minecraft.nbt.CompoundTag/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.internal/-compound-persistent-state/save.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk////PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/index.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk/ChunkSerializerMixin///PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/-chunk-serializer-mixin/index.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk/ChunkSerializerMixin/ChunkSerializerMixin/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/-chunk-serializer-mixin/-chunk-serializer-mixin.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk/EmptyLevelChunkMixin///PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/-empty-level-chunk-mixin/index.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk/EmptyLevelChunkMixin/EmptyLevelChunkMixin/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/-empty-level-chunk-mixin/-empty-level-chunk-mixin.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk/EmptyLevelChunkMixin/getCompound/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/-empty-level-chunk-mixin/get-compound.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk/ImposterProtoChunkMixin///PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/-imposter-proto-chunk-mixin/index.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk/ImposterProtoChunkMixin/ImposterProtoChunkMixin/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/-imposter-proto-chunk-mixin/-imposter-proto-chunk-mixin.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk/ImposterProtoChunkMixin/getCompound/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/-imposter-proto-chunk-mixin/get-compound.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk/LevelChunkMixin///PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/-level-chunk-mixin/index.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk/LevelChunkMixin/LevelChunkMixin/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/-level-chunk-mixin/-level-chunk-mixin.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk/LevelChunkMixin/compound/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/-level-chunk-mixin/compound.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk/ProtoChunkMixin///PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/-proto-chunk-mixin/index.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk/ProtoChunkMixin/ProtoChunkMixin/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/-proto-chunk-mixin/-proto-chunk-mixin.html
+$dokka.location:net.silkmc.silk.persistence.mixin.chunk/ProtoChunkMixin/compound/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.chunk/-proto-chunk-mixin/compound.html
+$dokka.location:net.silkmc.silk.persistence.mixin.entity////PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.entity/index.html
+$dokka.location:net.silkmc.silk.persistence.mixin.entity/EntityMixin///PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.entity/-entity-mixin/index.html
+$dokka.location:net.silkmc.silk.persistence.mixin.entity/EntityMixin/EntityMixin/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.entity/-entity-mixin/-entity-mixin.html
+$dokka.location:net.silkmc.silk.persistence.mixin.entity/EntityMixin/compound/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.entity/-entity-mixin/compound.html
+$dokka.location:net.silkmc.silk.persistence.mixin.world////PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.world/index.html
+$dokka.location:net.silkmc.silk.persistence.mixin.world/ServerWorldMixin///PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.world/-server-world-mixin/index.html
+$dokka.location:net.silkmc.silk.persistence.mixin.world/ServerWorldMixin/ServerWorldMixin/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.world/-server-world-mixin/-server-world-mixin.html
+$dokka.location:net.silkmc.silk.persistence.mixin.world/ServerWorldMixin/compound/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.world/-server-world-mixin/compound.html
+$dokka.location:net.silkmc.silk.persistence.mixin.world/ServerWorldMixin/getDataStorage/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence.mixin.world/-server-world-mixin/get-data-storage.html
+$dokka.location:net.silkmc.silk.persistence////PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/index.html
+$dokka.location:net.silkmc.silk.persistence//compoundKey/#net.minecraft.resources.ResourceLocation/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/compound-key.html
+$dokka.location:net.silkmc.silk.persistence//customCompoundKey/#net.minecraft.resources.ResourceLocation#kotlin.Function1[TypeParam(bounds=[kotlin.Any]),TypeParam(bounds=[net.minecraft.nbt.Tag])]#kotlin.Function1[TypeParam(bounds=[net.minecraft.nbt.Tag]),TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/custom-compound-key.html
+$dokka.location:net.silkmc.silk.persistence//customCompoundKey/#net.minecraft.resources.ResourceLocation#kotlin.Function1[TypeParam(bounds=[kotlin.Any]),net.minecraft.nbt.Tag]#kotlin.Function1[net.minecraft.nbt.Tag,TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/custom-compound-key.html
+$dokka.location:net.silkmc.silk.persistence//nbtElementCompoundKey/#net.minecraft.resources.ResourceLocation/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/nbt-element-compound-key.html
+$dokka.location:net.silkmc.silk.persistence//persistentCompound/net.minecraft.server.level.ServerLevel#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/persistent-compound.html
+$dokka.location:net.silkmc.silk.persistence//persistentCompound/net.minecraft.world.entity.Entity#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/persistent-compound.html
+$dokka.location:net.silkmc.silk.persistence//persistentCompound/net.minecraft.world.level.chunk.ChunkAccess#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/persistent-compound.html
+$dokka.location:net.silkmc.silk.persistence/CompoundKey///PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-compound-key/index.html
+$dokka.location:net.silkmc.silk.persistence/CompoundKey/CompoundKey/#kotlin.String/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-compound-key/-compound-key.html
+$dokka.location:net.silkmc.silk.persistence/CompoundKey/CompoundKey/#net.minecraft.resources.ResourceLocation/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-compound-key/-compound-key.html
+$dokka.location:net.silkmc.silk.persistence/CompoundKey/name/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-compound-key/name.html
+$dokka.location:net.silkmc.silk.persistence/CompoundProvider///PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-compound-provider/index.html
+$dokka.location:net.silkmc.silk.persistence/CompoundProvider/compound/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-compound-provider/compound.html
+$dokka.location:net.silkmc.silk.persistence/EmptyPersistentCompound///PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-empty-persistent-compound/index.html
+$dokka.location:net.silkmc.silk.persistence/PersistentCompound///PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-persistent-compound/index.html
+$dokka.location:net.silkmc.silk.persistence/PersistentCompound/PersistentCompound/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-persistent-compound/-persistent-compound.html
+$dokka.location:net.silkmc.silk.persistence/PersistentCompound/clear/#/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-persistent-compound/clear.html
+$dokka.location:net.silkmc.silk.persistence/PersistentCompound/get/#net.silkmc.silk.persistence.CompoundKey[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-persistent-compound/get.html
+$dokka.location:net.silkmc.silk.persistence/PersistentCompound/getAndRemove/#net.silkmc.silk.persistence.CompoundKey[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-persistent-compound/get-and-remove.html
+$dokka.location:net.silkmc.silk.persistence/PersistentCompound/getOrPut/#net.silkmc.silk.persistence.CompoundKey[TypeParam(bounds=[kotlin.Any])]#kotlin.Function0[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-persistent-compound/get-or-put.html
+$dokka.location:net.silkmc.silk.persistence/PersistentCompound/minusAssign/#net.silkmc.silk.persistence.CompoundKey[TypeParam(bounds=[kotlin.Any])]/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-persistent-compound/minus-assign.html
+$dokka.location:net.silkmc.silk.persistence/PersistentCompound/remove/#net.silkmc.silk.persistence.CompoundKey[*]/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-persistent-compound/remove.html
+$dokka.location:net.silkmc.silk.persistence/PersistentCompound/set/#net.silkmc.silk.persistence.CompoundKey[TypeParam(bounds=[kotlin.Any])]#TypeParam(bounds=[kotlin.Any])/PointingToDeclaration/silk-persistence/net.silkmc.silk.persistence/-persistent-compound/set.html
+net.silkmc.silk.persistence
+net.silkmc.silk.persistence.internal
+net.silkmc.silk.persistence.mixin.chunk
+net.silkmc.silk.persistence.mixin.entity
+net.silkmc.silk.persistence.mixin.world
+
